@@ -1,25 +1,4 @@
 <!DOCTYPE html>
-
-<html >
-<head>
-    <title>تسجيل الدخول </title>
-</head>
-<body>
-    <h2> أهلاً بعودتك </h2>
-    <form border="1">
-        <label>
-         البريد الإلكتروني <input type="email" name="email"> <br>  
-        </label>
-        <label>
-        كلمة المرور  <input type="password" name="pass" pattern=""> <br>  
-        </label>
-        <button>تسجيل الدخول</button><br>
-        <span> ان كنت لا تملك حساباً قم ب</span>
-        <a href="signin.html"> إنشاء حساب جديد </a>
-    </form>
-</body>
-</html>
-
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -41,11 +20,11 @@
     <div class="content">
       <div class="title"><h2>أهلاً بعودتك</h2></div>
       <div class="input">
-        <form class="formlogin" method="post">
+        <form class="formlogin" method="post" action="index.html">
           <div>
             <label id="email"> البريد الإلكتروني </label>
             <br />
-            <input type="email"  id="email" required />
+            <input type="email" name=""  id="email" required />
           </div>
           <div>
             <label id="pass"> كلمة المرور </label>
@@ -53,36 +32,16 @@
             <input type="password" id="pass" required />
           </div>
 
-          <button id="btn" type="submit">تسجيل الدخول</button>
+        
+        </form>
+<a href="index.html"><button class="btn"> تسجيل الدخول</button></a>
           <br />
           <span
             >ان كنت لا تملك حساباً قم
             <a href="signin.html">بإنشاء حساب جديد</a></span
           >
-        </form>
       </div>
     </div>
-  <script>
-  let email = document.getElementById("email");
-  let pass = document.getElementById("pass");
-  let btn = document.getElementById("btn");
-
-  email.focus();
-
-  function checkInputs() {
-    if (email.value.trim() !== "" && pass.value.trim() !== "") {
-      btn.style.display = "inline";
-    } else {
-      btn.style.display = "none";
-    }
-  }
-
-  email.addEventListener("input", checkInputs);
-  pass.addEventListener("input", checkInputs);
-
-  // Check once on page load
-  checkInputs();
-</script>
   </body>
 </html>
 

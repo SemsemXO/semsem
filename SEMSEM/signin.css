@@ -10,8 +10,8 @@ body{
  font-family: "Marhey", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-background-image: url("images/semsem1.png");
-background-size: 10%;
+background-image: linear-gradient(#EAD3F8,#B5F4B5);
+
 display: flex;
 justify-content: center;
 align-items: center;
@@ -72,7 +72,7 @@ a{
     transition: 0.5s;
 }
 a:hover{
-   color: white;
+  color: black;
    cursor: pointer;
    background-color: antiquewhite;
    padding: 4px;

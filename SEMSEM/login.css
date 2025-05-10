@@ -8,9 +8,9 @@ body {
   font-family: "Marhey", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background-image: url("images/semsem1.png");
-  background-size: 10%;
-  background-repeat: repeat;
+background-image: url("images/semsem2.jpg");
+background-size: 110% 100%;
+background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,12 +23,18 @@ body {
   background-color: rgba(255, 255, 255, 0.1); /* slight background for readability */
   padding: 5vw;
   border-radius: 30px;
-  border: 5px solid rgb(27, 27, 94);
+  border: 2px solid black ;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  /*#EAD3F8,#C2E4FF,#B5F4B5*/
+background-color:#C2E4FF ;
+background-size: 100vh;
+background-repeat: no-repeat;
+background-position: center;
+box-shadow: 5px 5px 3px rgba(24, 49, 139, 0.7);
  
   max-width:70%; /* limits content width on large screens */
 }
@@ -37,6 +43,7 @@ body {
   color: #6B4B8A;
   margin-bottom: 1rem;
   font-size: 2rem;
+  z-index: 1;
 }
 
 .content input {
@@ -44,28 +51,36 @@ body {
   margin: 0.5rem;
   width: 100%;
   border-radius: 20px;
-  border: 3px solid rgb(27, 27, 94);
-  background-color: transparent;
+  border: 2px solid rgb(27, 27, 94);
+ background-color: transparent;
   color: rgb(27, 27, 94);
   font-size: 1rem;
 }
 
-.content div button {
+.btn{
   margin: 10px;
   width: 100%;
   background-color: transparent;
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
   font-size: 1rem;
-  color: rgb(6, 27, 98);
-  transition: 0.6s;
+ font-family: "Marhey", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  cursor: pointer;
+ 
+color: black;
+transition:  all 0.9s ease;
+display: inline-block;
+
 }
 
-div button:hover {
-  cursor: pointer;
-  background-color: rgb(6, 27, 98);
-  color: white;
+ .input a .btn:hover {
+color: white;
+background-color:rgba(24, 49, 139, 0.7);
+
+
 }
 
 a {
@@ -74,13 +89,7 @@ a {
   transition: 0.5s;
 }
 
- button a:hover {
-color:white;
-   cursor: pointer;
-   background-color: antiquewhite;
-   padding: 4px;
-   border-radius: 20px;
-}
+ 
 
 /* === Media Queries for Responsiveness === */
 @media (max-width: 768px) {
