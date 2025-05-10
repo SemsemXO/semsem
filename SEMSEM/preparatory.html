@@ -3,120 +3,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prearoty Students |SemSem Academy</title>
-    <style>
-      body {
-        background-color: #f5f9ff;
-        margin: 0;
-        padding: 20px;
-        text-align: center;
-      }
-      .page-title {
-        color: #2c3e50;
-        font-size: 2.2rem;
-        margin-bottom: 10px;
-      }
-      .page-title span {
-        color: #bb9ac9;
-        font-weight: 700;
-      }
-      .page-subtitle {
-        color: #555;
-        font-size: 1.2rem;
-        margin-bottom: 30px;
-      }
-      .grades {
-        display: grid;
-        gap: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      .grades > div {
-        background: white;
-        border-radius: 12px;
-        padding: 25px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-      }
-      .grades > div:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-      }
-      .grades a {
-        text-decoration: none;
-        color: #333;
-        display: block;
-      }
-      .grades h2 {
-        margin: 0;
-        font-size: 30px;
-      }
-      .grade7:hover {
-        background-color: #d7bde2;
-      }
-      .grade8:hover {
-        background-color: #baf0d9;
-      }
-      .grade9:hover {
-        background-color: #cc8fe2;
-      }
-      .grade10:hover {
-        background-color: #81dba8;
-      }
-      /* ********************************************************************** */
-      .back-button a {
-        text-decoration: none;
-        font-size: 24px;
-        color: #333;
-        font-weight: bold;
-      }
-      .back-button {
-        background: white;
-        border-radius: 12px;
-        padding: 25px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-        text-align: center;
-        max-width: 1200px;
-        margin: 20px auto;
-      }
-      .back-button:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        background-color: #f9c8dc;
-      }
-      /* ********************************************************************** */
-      .wisdom {
-        font-family: "Amiri", serif;
-        font-size: 2rem;
-        color: #42556b;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        text-align: center;
-        line-height: 1.8;
-      }
-      /* ********************************************************************** */
-      .study-motivation {
-        background: #f8f9fa;
-        border-right: 5px solid #9b59b6;
-        padding: 20px;
-        margin: 25px auto;
-        border-radius: 0 8px 8px 0;
-        max-width: 900px;
-        text-align: right;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+    <link href="preparatory.css" rel="stylesheet">
   </head>
-  <body>
-    <h1 class="page-title">مرحباً بكم في منصة <span>SEMSEM</span></h1>
-    <p class="page-subtitle">اختر صفك لاستعراض المواد التعليمية:</p>
+  <body class="marhey-font">
+    <header class="navbar">
+      <div class="logo">
+        <img src="images/semsem1.png" alt="شعار SEMSEM" />
+        <h1>SemSem | Academy</h1>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#main">الصفحة الرئيسية</a></li>
+          <li><a href="#programs">البرامج التعليمية</a></li>
+          <li><a href="#about">عن سمسم</a></li>
+          <li><a href="#curriculum">المناهج</a></li>
+          <li><a href="#support">الدعم الفني</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <!--main content-->>
+    <main>
+
+    <div class="title">
+    <h1>مرحباً بكم في منصة <span>SEMSEM</span></h1>
+    </div>
 
     <div class="grades">
+      <div class="sub-title">
+      <p>اختر صفك لاستعراض المواد التعليمية:</p>
+      </div>
       <!-- الصف السابع-->
       <div class="grade7">
-        <a href="grade7.html">
-          <h2>الصف السابع</h2>
-        </a>
+        <a href="grade7.html"><h2>الصف السابع</h2></a>
       </div>
 
       <!-- الصف الثامن-->
@@ -146,20 +69,21 @@
     </div>
 
     <div class="study-motivation">
-      <h3>📚 الدراسة مع SEMSEM أصبحت أسهل!</h3>
+      <h3>📚 الدراسة مع <span>SEMSEM</span> أصبحت أسهل!</h3>
       <p>
         كل ما تحتاجه لتحصيل علمي مميز:
-        <span>دروس مفصلة، تمارين تفاعلية،</span>
-        <span>حلول نموذجية، وتقارير أداء دقيقة.</span>
+        دروس مفصلة، تمارين تفاعلية،
+        حلول نموذجية، وتقارير أداء دقيقة.
       </p>
     </div>
 
     <div class="wisdom">
       <p>
-        <span>مَنْ جَدَّ وَجَدَ</span>
-        <span> وَمَنْ سَارَ عَلَى الدَّرْبِ وَصَلَ</span>
+        مَنْ جَدَّ وَجَدَ
+         وَمَنْ سَارَ عَلَى الدَّرْبِ وَصَلَ
       </p>
     </div>
+    </main>
     <!-- footer -->
     <footer class="marhey-font footer">
       <div class="footer-content">
