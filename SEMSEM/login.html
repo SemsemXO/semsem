@@ -1,32 +1,17 @@
 <!DOCTYPE html>
-
-<html >
-<head>
-    <title>تسجيل الدخول </title>
-</head>
-<body>
-    <h2> أهلاً بعودتك </h2>
-    <form border="1">
-        <label>
-         البريد الإلكتروني <input type="email" name="email"> <br>  
-        </label>
-        <label>
-        كلمة المرور  <input type="password" name="pass" pattern=""> <br>  
-        </label>
-        <button>تسجيل الدخول</button><br>
-        <span> ان كنت لا تملك حساباً قم ب</span>
-        <a href="signin.html"> إنشاء حساب جديد </a>
-    </form>
-</body>
-</html>
-
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="hashem,rama,enas,suhibe,sedara,leen" />
-    <meta name="description" content="موقع تعليمي من الصف الأول للصف الثاني عشر في المملكة الأردنية الهاشمية" />
-    <meta name="keywords" content="تعليم, الأردن, منصة تعليمية, توجيهي, سمسم, semsem" />
+    <meta
+      name="description"
+      content="موقع تعليمي من الصف الأول للصف الثاني عشر في المملكة الأردنية الهاشمية"
+    />
+    <meta
+      name="keywords"
+      content="تعليم, الأردن, منصة تعليمية, توجيهي, سمسم, semsem"
+    />
     <link rel="icon" href="images/semsem1.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,51 +23,29 @@
     <title>تسجيل الدخول</title>
   </head>
   <body>
-    <div class="content">
+    <div class="content fade-in">
       <div class="title"><h2>أهلاً بعودتك</h2></div>
       <div class="input">
-        <form class="formlogin" method="post">
+        <form class="formlogin" method="post" action="index.html">
           <div>
             <label id="email"> البريد الإلكتروني </label>
             <br />
-            <input type="email"  id="email" required />
+            <input type="email" name="" id="email" required />
           </div>
           <div>
             <label id="pass"> كلمة المرور </label>
             <br />
             <input type="password" id="pass" required />
           </div>
-
-          <button id="btn" type="submit">تسجيل الدخول</button>
-          <br />
-          <span
-            >ان كنت لا تملك حساباً قم
-            <a href="signin.html">بإنشاء حساب جديد</a></span
-          >
         </form>
+        <a href="index.html"><button class="btn">تسجيل الدخول</button></a>
+        <br />
+        <span
+          >ان كنت لا تملك حساباً قم
+          <a href="signin.html">بإنشاء حساب جديد</a></span
+        >
       </div>
     </div>
-  <script>
-  let email = document.getElementById("email");
-  let pass = document.getElementById("pass");
-  let btn = document.getElementById("btn");
-
-  email.focus();
-
-  function checkInputs() {
-    if (email.value.trim() !== "" && pass.value.trim() !== "") {
-      btn.style.display = "inline";
-    } else {
-      btn.style.display = "none";
-    }
-  }
-
-  email.addEventListener("input", checkInputs);
-  pass.addEventListener("input", checkInputs);
-
-  // Check once on page load
-  checkInputs();
-</script>
+    <script src="login.js"></script>
   </body>
 </html>
-

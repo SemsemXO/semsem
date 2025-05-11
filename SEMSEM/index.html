@@ -25,103 +25,58 @@
   <body>
     <div class="content">
       <!-- navbar -->
-      <header class="marhey-font navbar">
+      <header id="main" class="marhey-font navbar">
         <div class="logo">
           <img src="images/semsem1.png" alt="شعار SEMSEM" />
           <h1>SemSem | Academy</h1>
         </div>
 
-
-      <nav
-        style="
-          flex: 1;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        "
-      ><!--navbar-->
-        <ul style="list-style-type: none; padding: 0; margin: 0; display: flex">
-          <li style="margin-right: 15px">
-            <a href="#" style="text-decoration: none">الدعم الفني</a>
-          </li>
-          <li style="margin-right: 15px">
-            <a href="#" style="text-decoration: none">عن سمسم</a>
-          </li>
-          <li style="margin-right: 15px">
-            <a href="#" style="text-decoration: none">المناهج</a>
-          </li>
-          <li style="margin-right: 15px">
-            <a href="#" style="text-decoration: none">البرامج التعليمية</a>
-          </li>
-          <li style="margin-right: 15px">
-            <a href="#" style="text-decoration: none">الصفحة الرئيسية</a>
-          </li>
-        </ul>
-      </nav>
-<!--الازرار-->
-      <div style="display: flex; gap: 10px">
-        <button style="padding: 8px 15px"> <a href="login.html"> تسجيل الدخول</a></button>
-        <button style="padding: 8px 15px"><a href="signin.html"> حساب جديد</a></button>
-      </div>
-    </header>
-<!----المحتوى-->
-    <main>
-      <div>
-        <b><b>جسر المستقبل للتعليم الذكي والشامل - SEMSEM</b></b>
-      </div>
-      <h1>اختر المرحلة التعليمية</h1>
-      <div class="boxes">
-        <div class="box">
-          <h2>المرحلة الأساسية الدنيا</h2>
-          <p>من الصف الأول إلى السادس</p>
-        </div>
-        <div class="box">
-          <h2>المرحلة الأساسية العليا</h2>
-          <p>من الصف السابع إلى العاشر</p>
-=======
+        <!-- قائمة التنقل -->
         <nav>
           <ul class="nav-links">
-            <li><a href="#main">الصفحة الرئيسية</a></li>
-            <li><a href="#programs">البرامج التعليمية</a></li>
+            <li><a href="#support">الدعم الفني</a></li>
             <li><a href="#about">عن سمسم</a></li>
             <li><a href="#curriculum">المناهج</a></li>
-            <li><a href="#support">الدعم الفني</a></li>
+            <li><a href="#programs">البرامج التعليمية</a></li>
+            <li><a href="#main">الصفحة الرئيسية</a></li>
           </ul>
         </nav>
 
+        <!-- أزرار -->
         <div class="btn">
           <a href="login.html" class="marhey-font header-btn login-btn"
             >تسجيل الدخول</a
           >
           <a href="signin.html" class="marhey-font header-btn account-btn"
-            >انشاء حساب</a
+            >إنشاء حساب</a
           >
-
         </div>
       </header>
+
       <!-- main -->
       <main id="main" class="marhey-font">
         <div class="titles">
           <h1>جسر المستقبل للتعليم الذكي والشامل - SEMSEM</h1>
         </div>
 
-        <div class="boxes">
-          <a href="primary_student.html" class="box">
+        <h1>اختر المرحلة التعليمية</h1>
+        <div class="boxes" id="curriculum">
+          <a href="primary_student.html" class="box fade-in">
             <h2>المرحلة الأساسية الدنيا</h2>
             <p>من الصف الأول إلى السادس</p>
           </a>
-          <a href="preparatory_student.html" class="box">
+          <a href="preparatory.html" class="box fade-in">
             <h2>المرحلة الأساسية العليا</h2>
             <p>من الصف السابع إلى العاشر</p>
           </a>
-          <a href="secondary_student.html" class="box">
+          <a href="secondary_student.html" class="box fade-in">
             <h2>التوجيهي</h2>
             <p>الصف الأول والثاني ثانوي</p>
           </a>
         </div>
 
         <!-- about -->
-        <div id="about" class="desc">
+        <div id="about" class="desc fade-in">
           <h1>نبذة</h1>
           <p>
             SEMSEM هي منصة تعليمية أردنية ذكية، صمّمها طلاب جامعة الأردن لتكون
@@ -131,8 +86,9 @@
             أقرب، وأكثر متعة. ببساطة، SEMSEM بتقرّب التعليم من كل بيت أردني.
           </p>
         </div>
+
         <!-- join -->
-        <div class="hero-section join-sec">
+        <div id="programs" class="hero-section join-sec fade-in">
           <div>
             <h1>انضم إلى SemSem Academy اليوم</h1>
             <div class="join-boxes">
@@ -154,6 +110,7 @@
             <img src="images/registration.png" alt="صورة تسجيل" />
           </div>
         </div>
+
         <!-- curriculum -->
         <div class="desc-stu">
           <img src="images/kids.png" alt="أطفال يتعلمون" />
@@ -168,7 +125,7 @@
           </p>
         </div>
 
-        <div id="curriculum" class="goal">
+        <div class="goal">
           <p>
             رسالتنا نحن في SEMSEM لا نبني مجرد منصة تعليمية، بل نفتح باباً للفرص
             أمام كل طالب، مهما كانت خلفيته أو ظروفه. نؤمن أن التعليم حق، وليس
@@ -182,8 +139,9 @@
         <div id="support"></div>
         <!-- نقطة ربط دعم فني -->
       </main>
+
       <!-- footer -->
-      <footer class="marhey-font footer">
+      <footer class="marhey-font footer fade-in">
         <div class="footer-content">
           <div class="semsem">
             <h3>منصة سمسم التعليمية</h3>
@@ -216,5 +174,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
