@@ -203,26 +203,34 @@ padding: 10px;
   width: 40vw;
 }
 .desc-stu {
+  align-content: left;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-  padding: 5rem;
+  justify-content: space-evenly;
+width: 100%;
+height: auto;
   color: #6b4b8a;
-  font-size: 1.1rem;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  font-size: 1.7vw;
+  padding: 20px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .desc-stu p {
   margin-right: 10rem;
   font-weight: bold;
 }
+.desc-stu2{
+width: 70%;
+height: auto;
+}
 .desc-stu img {
-  width: 50vw;
+  width: 30vw;
 }
 .goal {
+  width: 100%;
+  height: auto;
   display: flex;
-  padding: 2rem;
+  justify-content: space-evenly;
+ font-size: 1rem;
   margin-bottom: 5rem;
 }
 .goal p {
@@ -233,9 +241,7 @@ padding: 10px;
   color: #6b4b8a;
   font-weight: bold;
   border-radius: 50%;
-}
-.goal img {
-  width: 60vw;
+  font-size: 1.8vw;
 }
 
 /*footer*/
@@ -258,7 +264,7 @@ padding: 10px;
   color: #6b4b8a;
 }
 .contact {
-  width: 30%;
+  width: 70%;
   color: #6b4b8a;
 }
 .contact a {
@@ -284,6 +290,18 @@ padding: 10px;
 a{
     text-decoration: none;
 }
+
+.gool1 p{
+  width: 60%;
+  height: auto;
+}
+.gool2{
+  width: 50%;
+}
+.gool2 img{
+ height: 50vh;
+width: 40vw;
+}
       .fade-in {
         opacity: 0;
         transform: translateY(20px);
@@ -298,6 +316,9 @@ a{
   transform: translateY(-10px) rotate(5deg);
 }
       @media screen and (max-width: 600px){
+        body{
+          align-items: center;
+        }
        header{
         display: flex;
         flex-direction: column;
@@ -324,11 +345,65 @@ main{
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  height: auto;
 }
 .join-box{
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+#programs{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.desc-stu{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.desc-stu p {
+  width: 70%;
+  font-size: 1rem;
+}
+.programs1{
+  width: 100%;
+}
+.programs1 img{
+  width: 100%;
+}
+.desc-stu1{
+  width: 100%;
+align-items: center;
+padding: 20px;
+}
+.desc-stu1 img{
+  width: 90%;
+
+}
+.desc-stu2{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+height: auto;
+border: #8cd48c solid 3px;
+   align-items: center;
+}
+.desc-stu2 p{
+  padding: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.goal{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+.goal1{
+  font-size: 2rem;
 }
 
 
