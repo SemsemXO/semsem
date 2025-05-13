@@ -109,6 +109,7 @@ main {
 .materials{
     display:flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap:80px;
 }
 .materials li{
@@ -156,7 +157,7 @@ main {
 }
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     width: 100%;
 }
 
@@ -193,3 +194,27 @@ main {
 .footer-bottom a:hover {
             transform: scale(1.1);
         }
+        /*fade-in*/
+.fade-in {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    @media screen and (max-width: 600px) {
+        .contact{
+          width:50%
+        }
+        .semsem{
+            width:60%
+        }
+        .logo img {
+     width: 25vw;
+    height: 25vh;
+}
+        
+    }
