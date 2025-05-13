@@ -1,178 +1,134 @@
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Secondary Students |SemSem Academy</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap");
-      body {
-        background-color: #f5f9ff;
-        margin: 0;
-        padding: 20px;
-        text-align: center;
-      }
-      .page-title {
-        color: #2c3e50;
-        font-size: 2.2rem;
-        margin-bottom: 10px;
-      }
-      .page-title span {
-        color: #bb9ac9;
-        font-weight: 700;
-      }
-      .page-subtitle {
-        color: #555;
-        font-size: 1.2rem;
-        margin-bottom: 30px;
-      }
-      .grades {
-        display: grid;
-        gap: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      .grades > div {
-        background: white;
-        border-radius: 12px;
-        padding: 25px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-      }
-      .grades > div:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-      }
-      .grades a {
-        text-decoration: none;
-        color: #333;
-        display: block;
-      }
-      .grades h2 {
-        margin: 0;
-        font-size: 30px;
-      }
-      .grade11:hover {
-        background-color: #d7bde2;
-      }
-      .grade12:hover {
-        background-color: #baf0d9;
-      }
-      /* ********************************************************************** */
-      .back-button a {
-        text-decoration: none;
-        font-size: 24px;
-        color: #333;
-        font-weight: bold;
-      }
-      .back-button {
-        background: white;
-        border-radius: 12px;
-        padding: 25px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-        text-align: center;
-        max-width: 1200px;
-        margin: 20px auto;
-      }
-      .back-button:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        background-color: #f9c8dc;
-      }
-      /* ********************************************************************** */
-      .wisdom {
-        font-family: "Amiri", serif;
-        font-size: 2rem;
-        color: #42556b;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        text-align: center;
-        line-height: 1.8;
-      }
-      /* ********************************************************************** */
-      .study-motivation {
-        background: #f8f9fa;
-        border-right: 5px solid #9b59b6;
-        padding: 20px;
-        margin: 25px auto;
-        border-radius: 0 8px 8px 0;
-        max-width: 900px;
-        text-align: right;
-      }
-    </style>
-  </head>
-  <body>
-    <h1 class="page-title">مرحباً بكم في منصة <span>SEMSEM</span></h1>
-    <p class="page-subtitle">اختر صفك لاستعراض المواد التعليمية:</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+    <link href="secondary.css" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar marhey-font">
+        <div class="logo">
+            <img src="images/semsem1.png" alt="شعار SEMSEM" />
+        </div>
 
-    <div class="grades">
-      <!-- الصف الحادي عشر -->
-      <div class="grade11">
-        <a href="grade11.html">
-          <h2>الأول ثانوي | الصف الحادي عشر</h2>
-        </a>
-      </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="#programs">البرامج التعليمية</a></li>
+                <li><a href="#about">عن سمسم</a></li>
+                <li><a href="#curriculum">المناهج</a></li>
+                <li><a href="#support">الدعم الفني</a></li>
+            </ul>
+        </nav>
 
-      <!-- الصف الثاني عشر -->
-      <div class="grade12">
-        <a href="grade12.html">
-          <h2>توجيهي | الصف الثاني عشر</h2>
-        </a>
-      </div>
-    </div>
+    </header>
 
-    <div class="back-button">
-      <a href="index.html">عودة 🔙</a>
-    </div>
+    <main class="marhey-font slide-in">
+        <div class="title">
+            <h1>مرحباً بكم في منصة <span>SEMSEM</span></h1>
+        </div>
 
-    <div class="study-motivation">
-      <h3>📚 الدراسة مع SEMSEM أصبحت أسهل!</h3>
-      <p>
-        كل ما تحتاجه لتحصيل علمي مميز:
-        <span>دروس مفصلة، تمارين تفاعلية،</span>
-        <span>حلول نموذجية، وتقارير أداء دقيقة.</span>
-      </p>
-    </div>
+        <div class="grades">
+            <div class="sub-title">
+                <p>اختر صفك لاستعراض المواد التعليمية:</p>
+            </div>
+            <!-- الصف الحادي عشر -->
+            <div class="grade11">
+                <h2>
+                    <a href="grade11.html">
+                        الأول ثانوي | الصف الحادي عشر
+                    </a>
+                </h2>
+            </div>
 
-    <div class="wisdom">
-      <p>
-        <span>مَنْ جَدَّ وَجَدَ</span>
-        <span> وَمَنْ سَارَ عَلَى الدَّرْبِ وَصَلَ</span>
-      </p>
-    </div>
+            <!-- الصف الثاني عشر -->
+            <div class="grade12">
+                <h2>
+                    <a href="grade12.html">
+                        توجيهي | الصف الثاني عشر
+                    </a>
+                </h2>
+            </div>
+        </div>
+
+        <div class="back-button">
+            <a href="index.html">عودة 🔙</a>
+        </div>
+
+        <div class="study-motivation">
+            <div>
+                <h3>📚 الدراسة مع <span>SEMSEM</span> أصبحت أسهل!</h3>
+            </div>
+            <div>
+                <p>
+                    كل ما تحتاجه لتحصيل علمي مميز:
+                    دروس مفصلة، تمارين تفاعلية،
+                    لول نموذجية، وتقارير أداء دقيقة.
+                </p>
+            </div>
+        </div>
+
+        <div class="wisdom">
+            <p>
+                مَنْ جَدَّ وَجَدَ
+                وَمَنْ سَارَ عَلَى الدَّرْبِ وَصَلَ
+            </p>
+        </div>
+    </main>
     <!-- footer -->
     <footer class="marhey-font footer">
-      <div class="footer-content">
-        <div class="semsem">
-          <h3>منصة سمسم التعليمية</h3>
-          <p>
-            منصة تعليمية ذكية وشاملة تدعم طلاب الصف الأول حتى الثاني عشر، وتوفّر
-            أدوات تفاعلية للطلاب، موارد تعليمية للمعلمين، ولوحة متابعة لأولياء
-            الأمور — نحو تجربة تعلم رقمية متكاملة ومواكبة للعصر.
-          </p>
+        <div class="footer-content">
+            <div class="semsem">
+                <div>
+                    <h3>منصة سمسم التعليمية</h3>
+                </div>
+                <div>
+                    <p>
+                        منصة تعليمية ذكية وشاملة تدعم طلاب الصف الأول حتى الثاني عشر، وتوفّر
+                        أدوات تفاعلية للطلاب، موارد تعليمية للمعلمين، ولوحة متابعة لأولياء
+                        الأمور — نحو تجربة تعلم رقمية متكاملة ومواكبة للعصر.
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div>
+                    <h4>تواصل معنا</h4>
+                </div>
+                <div>
+                    <p>
+                        البريد الإلكتروني:
+                        <a href="mailto:contact@semsem.edu.jo">contact@semsem.edu.jo</a>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        الهاتف / واتساب:
+                        <a href="tel:+962790000000" dir="ltr">+962 79 000 0000</a>
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div class="contact">
-          <h4>تواصل معنا</h4>
-          <p>
-            البريد الإلكتروني:
-            <a href="mailto:contact@semsem.edu.jo">contact@semsem.edu.jo</a>
-          </p>
-          <p>
-            الهاتف / واتساب:
-            <a href="tel:+962790000000" dir="ltr">+962 79 000 0000</a>
-          </p>
+        <div class="footer-bottom">
+            <div>
+                <p>جميع الحقوق محفوظة &copy; لسمسم أكاديمي 2025</p>
+            </div>
+            <div>
+                <p>
+                    <a href="#about">من نحن</a> |
+                    <a href="#privacy">سياسة الخصوصية</a>
+                </p>
+            </div>
         </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>جميع الحقوق محفوظة &copy; لسمسم أكاديمي 2025</p>
-        <p>
-          <a href="#about">من نحن</a> |
-          <a href="#privacy">سياسة الخصوصية</a>
-        </p>
-      </div>
     </footer>
-  </body>
+
+    <script src="secondary.js">
+    </script>
+
+</body>
 </html>
