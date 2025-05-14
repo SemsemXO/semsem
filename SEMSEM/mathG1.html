@@ -17,14 +17,18 @@
       href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="mathG1.css" />
     <title>   مادة الرياضيات للصف الأول </title>
   </head>
   <body>
     
-    <header>
-        <div class="home">
-            <ul>
+    <header class="navbar marhey-font">
+        <div class="logo">
+            <img src="images/semsem1.png" alt="شعار SEMSEM" />
+        </div>
+
+        <div>
+            <ul class="nav-links">
                 <li><a href="index.html"> الصفحة الرئيسية  </a></li>
                 <li><a href="grade1"> رجوع  </a></li>
             </ul>
@@ -32,25 +36,29 @@
         
     </header>
    
- <div class="container">
+ <main class="marhey-font">
     <nav>
-        <div class="math1"><h2>رياضيات الفصل الأول </h2></div>
-        <ul>
+      <div class="semester1 fade-in">
+        <div class="title"><h2>رياضيات الفصل الأول </h2></div>
+        <ul class="materials">
             
             <li><a href="#"> الوحدة الأولى </a></li>
             <li><a href="#"> الوحدة الثانية </a></li>
             <li><a href="#"> الوحدة الثالثة </a></li>
             <li><a href="#"> الوحدة الرابعة</a></li>
         </ul>
-        <div class="math2"> <h2> رياضيات الفصل التاني </h2> </div>
-        <ul>
+        </div>
+        <div class="semester2 fade-in">
+        <div class="title"> <h2> رياضيات الفصل التاني </h2> </div>
+        <ul class="materials">
             <li><a href="#"> الوحدة  الأولى </a></li>
             <li><a href="#"> الوحدة الثانية </a></li>
             <li><a href="#"> الوحدة الثالثة </a></li>
             <li><a href="#"> الوحدة الرابعة</a></li>
         </ul>
+        </div>
     </nav>
-   </div>
+    </main>
     
     <footer class="marhey-font footer">
         <div class="footer-content">
@@ -84,5 +92,6 @@
           </p>
         </div>
  </footer>
+ <script src="mathG1.js"></script>
 </body>
 </html>
