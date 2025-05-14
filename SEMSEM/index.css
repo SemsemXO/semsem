@@ -329,6 +329,7 @@ width: 40vw;
        .nav-links{
         display: flex;
         gap: 1rem;
+        font-size: 0.6rem;
        }
        .logo img {
 max-width: 100%;
@@ -340,7 +341,7 @@ max-width: 100%;
     gap: 1rem;
 }
 *{
-  font-size:1rem;
+  font-size:0.9rem;
 }
 main{
   display: flex;
@@ -416,5 +417,12 @@ font-size: 1rem;
 .navbar{
   font-size: 1px;
 }
+   .footer-content{
+                flex-direction: column;
+            }
+            .semsem,.contact{
+                width:100%;
+                margin:1rem;
+            }
       }
       

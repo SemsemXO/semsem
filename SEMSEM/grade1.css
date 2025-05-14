@@ -4,7 +4,7 @@
 }
 
 body {
-    background: linear-gradient(135deg,white,#EAD3F8 );
+    background: linear-gradient(135deg, white, #EAD3F8);
     text-align: center;
 }
 
@@ -18,13 +18,11 @@ a {
     text-decoration: none;
 }
 
-
 /*navbar*/
 .navbar {
     display: flex;
     align-items: center;
     gap: 155px;
-    padding: 15px 20px;
     border-bottom: 1px solid;
     position: fixed;
     z-index: 5;
@@ -32,59 +30,61 @@ a {
     background: white;
     border-bottom: 5px #FF6B6B solid;
     border-radius: 0 0 15px 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .nav-links {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-    .nav-links a {
-        text-decoration: none;
-        color: #FF6B6B;
-        font-weight: 600;
-        font-size: 1.1rem;
-        transition: all 0.3s ease;
-        padding: 4px 10px;
-        border-radius: 20px;
-        position: relative;
-    }
+.nav-links a {
+    text-decoration: none;
+    color: #FF6B6B;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 4px 10px;
+    border-radius: 20px;
+    position: relative;
+}
 
-        .nav-links a:hover {
-            background-color: #C2E4FF;
-            padding: 5px 30px 5px 5px;
-            transform: scale(1.1);
-        }
+.nav-links a:hover {
+    background-color: #C2E4FF;
+    padding: 5px 30px 5px 5px;
+    transform: scale(1.1);
+}
 
-        .nav-links a::before {
-            content: '🌟';
-            position: absolute;
-            right: 15px;
-            opacity: 0;
-            transition: all 0.3s ease;
-        }
+.nav-links a::before {
+    content: '🌟';
+    position: absolute;
+    right: 15px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
 
-        .nav-links a:hover::before {
-            opacity: 1;
-            right: 5px;
-        }
-
+.nav-links a:hover::before {
+    opacity: 1;
+    right: 5px;
+}
 
 /*logo*/
 .logo {
     transition: all 0.3s ease;
 }
 
-    .logo img {
-        width: 15vw;
-        height: 15vh;
-    }
+.logo img {
+    width: 15vw;
+    height: auto;
+}
 
-    .logo:hover {
-        transform: scale(1.05);
-    }
-
+.logo:hover {
+    transform: scale(1.05);
+}
 
 /*main*/
 main {
@@ -97,13 +97,11 @@ main {
     color: #45B7D1;
 }
 
-    .title span {
-        background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96C93D, #FFA07A);
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-
-
+.title span {
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96C93D, #FFA07A);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 /*material cards*/
 .sub-title {
@@ -123,65 +121,60 @@ main {
     gap: 50px;
 }
 
-    .materials > div {
-        border-radius: 20px;
-        padding: 50px 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        transition: all 2s ease;
-        position: relative;
-    }
+.materials > div {
+    border-radius: 20px;
+    padding: 50px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 2s ease;
+    position: relative;
+}
 
-        .materials > div::before {
-            content: '✏️';
-            position: absolute;
-            right: 15px;
-            top: 5px;
-            font-size: 2rem;
-        }
+.materials > div::before {
+    content: '✏️';
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 2rem;
+}
 
-        .materials > div:hover {
-            transform: rotateY(360deg);
-        }
+.materials > div:hover {
+    transform: rotateY(360deg);
+}
 
-    .materials a {
-        color: white;
-    }
-
-
+.materials a {
+    color: white;
+}
 
 /*subjects*/
 .math {
     grid-area: math;
-    background: linear-gradient(135deg,#6da16d,#8ac78a 80%);
+    background: linear-gradient(135deg, #6da16d, #8ac78a 80%);
 }
 
 .english {
     grid-area: english;
-    background: linear-gradient(135deg,#895ba5,#ab77cc 80%);
+    background: linear-gradient(135deg, #895ba5, #ab77cc 80%);
 }
 
 .arabic {
     grid-area: arabic;
-    background: linear-gradient(135deg,#e28966,#FFA07A 80%);
+    background: linear-gradient(135deg, #e28966, #FFA07A 80%);
 }
 
 .social {
     grid-area: social;
-    background: linear-gradient(135deg,#c93497,#f042b6 80%);
+    background: linear-gradient(135deg, #c93497, #f042b6 80%);
 }
 
 .science {
     grid-area: science;
-    background: linear-gradient(135deg,#d3c013,#f7e225 80%);
+    background: linear-gradient(135deg, #d3c013, #f7e225 80%);
 }
 
 .religion {
     grid-area: religion;
-    background: linear-gradient(135deg,#6698c0,#87bfee 80%);
+    background: linear-gradient(135deg, #6698c0, #87bfee 80%);
 }
-
-
-
 
 /*wisdom card*/
 .wisdom {
@@ -193,27 +186,29 @@ main {
     font-size: 1.8rem;
     font-weight: bold;
     border-radius: 25px;
-    ;
+    position: relative;
 }
 
-    .wisdom::before {
-        content: '🌳';
-        position: absolute;
-        right: 20px;
-    }
+.wisdom::before {
+    content: '🌳';
+    position: absolute;
+    right: 20px;
+}
 
 /*footer*/
 .footer {
     padding: 50px 20px 10px 20px;
     background: white;
     border-top: 5px #FF6B6B solid;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .semsem {
@@ -226,10 +221,10 @@ main {
     color: #FF6B6B;
 }
 
-    .contact a {
-        text-decoration: none;
-        color: #345a51;
-    }
+.contact a {
+    text-decoration: none;
+    color: #345a51;
+}
 
 /*footer bottom*/
 .footer-bottom {
@@ -242,23 +237,117 @@ main {
     color: #345a51;
 }
 
-    .footer-bottom a {
-        text-decoration: none;
-        color: #345a51;
-    }
+.footer-bottom a {
+    text-decoration: none;
+    color: #345a51;
+}
 
-        .footer-bottom a:hover {
-            transform: scale(1.1);
-        }
+.footer-bottom a:hover {
+    transform: scale(1.1);
+}
 
-        /*Slide-in*/
+/*Slide-in*/
 .slide-in {
     opacity: 0;
-    transform: translateX(70px); 
+    transform: translateX(70px);
     transition: all 0.9s ease-out;
 }
 
-    .slide-in.visible {
-        opacity: 1;
-        transform: translateX(0);
+.slide-in.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar {
+        gap: 50px;
     }
+
+    .logo img {
+        width: 20vw;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .materials {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "math english"
+            "arabic social"
+            "science religion";
+        gap: 30px;
+    }
+
+    main {
+        padding: 150px 30px 0 30px;
+    }
+
+    .wisdom {
+        margin: 50px 20px;
+        padding: 40px;
+        font-size: 1.5rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .semsem, .contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 60vw;
+    }
+
+    .nav-links {
+
+        width: 100%;
+        
+    }
+
+    .nav-links a {
+        font-size: 0.6rem;
+        padding: 8px 15px;
+    }
+
+    .materials {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "math"
+            "english"
+            "arabic"
+            "social"
+            "science"
+            "religion";
+        gap: 20px;
+    }
+
+    .sub-title {
+        font-size: 1.5rem;
+    }
+
+    .wisdom {
+        font-size: 1.3rem;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding: 20px 10px;
+    }
+}
