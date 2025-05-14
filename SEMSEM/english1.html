@@ -12,6 +12,7 @@
       name="keywords"
       content="تعليم, الأردن, منصة تعليمية, توجيهي, الصف الاول, سمسم, semsem, تربية إسلامية"
     />
+    <link rel="stylesheet" href="english1.css">
     <link rel="icon" href="images/semsem1.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,55 +21,49 @@
       rel="stylesheet"
     />
     <title>اللغة الإنجليزية - الصف الأول</title>
-    <style>
-      .divider {
-        margin: 20px 0;
-        border-bottom: 1px dashed #999;
-      }
-      .choice {
-        color: blue;
-        text-decoration: underline;
-        display: inline-block;
-        margin-top: 5px;
-      }
-    </style>
   </head>
+
+
   <body>
-    <!-- رسالة ترحيبية -->
-    <header class="header">
-      <div
-        style="
-          background-color: #f0f8ff;
-          padding: 20px;
-          border-radius: 15px;
-          text-align: center;
-          margin-bottom: 30px;
-          border: 2px dashed;
-        "
-      >
-        <h1 style="color: #2a5885">✨ مرحباً بطلاب الصف الأول الأعزاء ✨</h1>
-        <p>
-          "مرحباً بكم في رحلتنا الممتعة مع الإنجليزية! 🌟 !Where learning English becomes an adventure"
-        </p>
-      </div>
+
+    <header class="navbar marhey-font">
+        <div class="logo">
+            <img src="images/semsem1.png" alt="شعار SEMSEM" />
+        </div>
+
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="grade1.html">رجوع</a></li>
+            </ul>
+        </div>
+        
     </header>
 
-    <div class="header">
-      <h1>منصة اللغة الإنجليزية- الصف الأول</h1>
-    </div>
 
-    <!-- أزرار التنقل -->
+    <main class="marhey-font">
+    <!-- رسالة ترحيبية -->
+      <div class="welcome">
+        <div><h1>✨ مرحباً بطلاب الصف الأول الأعزاء ✨</h1></div>
+        <div><p>
+          "مرحباً بكم في رحلتنا الممتعة مع الإنجليزية! 🌟 !Where learning English becomes an adventure"
+        </p></div>
+        <div class="plane">✈️</div>
+      </div>
+
+
+   <!-- 
     <div class="top-buttons">
       <a href="index.html">الصفحة الرئيسية</a>
       <button onclick="history.back()">رجوع</button>
     </div>
+   -->
 
-    <nav>
-      <a href="#sem1">الفصل الأول</a>
-      <a href="#sem2">الفصل الثاني</a>
+    <nav class="nav-btn">
+      <div><a href="#sem1">الفصل الأول</a></div>
+      <div><a href="#sem2">الفصل الثاني</a></div>
     </nav>
 
-    <main>
       <!-- image1 -->
       <div class="img1">
         <img src="images/English1.png" alt="Ready To Learn">
@@ -76,135 +71,143 @@
 
       <!-- المحتوى التعليمي للفصلين -->
       <!-- بداية الفصل الأول -->
-      <div class="semester1" id="sem1">
-        <h1>اللغة الإنجليزية - الفصل الأول</h1>
+      <div class="sections">
+      <div class="title"><h1>منصة اللغة الإنجليزية- الصف الأول</h1></div>
 
+
+      <div class="section1" id="sem1">
+        <div class="subtitle"><h2>اللغة الإنجليزية - الفصل الأول</h2></div>
+
+        <div class="allUnits">
         <div class="unit">
-          <h2>Intro: Hello!</h2>
-          <ul>
-            <li>Welcome Hello -1</li>
+          <div class="unit-title"><h2>!Intro: Hello</h2></div>
+          <ul class="lessons">
+            <li><a href="#">Welcome Hello </a></li>
           </ul>
-          <a class="choice" href="#">اختبار الوحدة</a>
+          <div class="quiz-btn"><a href="#">اختبار الوحدة</a></div>
         </div>
 
         <div class="unit">
-          <h2>Unit 1: Family and Friends</h2>
-          <ul>
-            <li>Lesson 1 and 2 -1</li>
-            <li>Lesson 3 and 4 -2</li>
-            <li>Lesson 5 and 6 -3</li>
-            <li>Lesson 7 and 8 -4</li>
-            <li>Lesson 9 -5</li>
-            <li>Lesson 10 -6</li>
+          <div class="unit-title"><h2>Unit 1: Family and Friends</h2></div>
+          <ul class="lessons">
+            <li><a href="#">Lesson 1 and 2 </a></li>
+            <li><a href="#">Lesson 3 and 4 </a></li>
+            <li><a href="#">Lesson 5 and 6 </a></li>
+            <li><a href="#">Lesson 7 and 8 </a></li>
+            <li><a href="#">Lesson 9 </a></li>
+            <li><a href="#">Lesson 10 </a></li>
           </ul>
-          <a class="choice" href="#">اختبار الوحدة</a>
+          <div class="quiz-btn"><a href="#">اختبار الوحدة</a></div>
         </div>
 
         <div class="unit">
-          <h2>Unit 2: My School Bag</h2>
-          <ul>
-            <li>Lesson 1 and 2 -1</li>
-            <li>Lesson 3 and 4 (Language practice) -2</li>
-            <li>Story - Lesson 5 and 6 -3</li>
-            <li>Language Practice Lesson 7 and 8 -4</li>
-            <li>Phonics Pp Rr Lesson 9 -5</li>
-            <li>Phonics Ee Bb lesson 10 -6</li>
+         <div class="unit-title"><h2>Unit 2: My School Bag</h2></div>
+          <ul class="lessons">
+            <li><a href="#">Lesson 1 and 2 </a></li>
+            <li><a href="#">Lesson 3 and 4 (Language practice)</a></li>
+            <li><a href="#">Story - Lesson 5 and 6 </a></li>
+            <li><a href="#">Language Practice Lesson 7 and 8 </a></li>
+            <li><a href="#">Phonics Pp Rr Lesson 9 </a></li>
+            <li><a href="#">Phonics Ee Bb lesson 10 </a></li>
           </ul>
-          <a class="choice" href="#">اختبار الوحدة</a>
+          <div class="quiz-btn"><a href="#">اختبار الوحدة</a></div>
         </div>
 
         <div class="unit">
-          <h2>Unit 3: Our Classroom</h2>
-          <ul>
-            <li>Lesson 1 and 2 -1</li>
-            <li>Lesson 3 and 4 (Language practice) -2</li>
-            <li>Story - Lesson 5 and 6 -3</li>
-            <li>Lesson 7 and 8 (Language practice) -4</li>
-            <li>Lesson 9 - Phonics Tt, Mm -5</li>
-            <li>Lesson 10 - Phonics Ww, Ii -6</li>
-            <li>Lesson 12 and 13 - Review -7</li>
+          <div class="unit-title"><h2>Unit 3: Our Classroom</h2></div>
+          <ul class="lessons">
+            <li><a href="#">Lesson 1 and 2 </a></li>
+            <li><a href="#">Lesson 3 and 4 (Language practice) </a></li>
+            <li><a href="#">Story - Lesson 5 and 6 </a></li>
+            <li><a href="#">Lesson 7 and 8 (Language practice) </a></li>
+            <li><a href="#">Lesson 9 - Phonics Tt, Mm </a></li>
+            <li><a href="#">Lesson 10 - Phonics Ww, Ii </a></li>
+            <li><a href="#">Lesson 12 and 13 - Review </a></li>
           </ul>
-          <a class="choice" href="#">اختبار الوحدة</a>
+          <div class="quiz-btn"><a class="choice" href="#">اختبار الوحدة</a></div>
         </div>
 
         <div class="unit">
-          <h2>Unit 4: My Favourite Toy</h2>
-          <ul>
-            <li>Lesson 1 and 2 -1</li>
-            <li>Lesson 3 and 4 (Language practice) -2</li>
-            <li>Story - Lesson 5 and 6 -3</li>
-            <li>Lesson 7 and 8 (Language practice) -4</li>
-            <li>Lesson 9 - Phonics CVC words -5</li>
-            <li>Lesson 10 - Phonics CVC words -6</li>
-            <li>Lesson 12 and 13 - Review -7</li>
+          <div class="unit-title"><h2>Unit 4: My Favourite Toy</h2></div>
+          <ul class="lessons">
+            <li><a href="#">Lesson 1 and 2 </a></li>
+            <li><a href="#">Lesson 3 and 4 (Language practice) </a></li>
+            <li><a href="#">Story - Lesson 5 and 6 -3</li>
+            <li><a href="#">Lesson 7 and 8 (Language practice) </a></li>
+            <li><a href="#">Lesson 9 - Phonics CVC words </a></li>
+            <li><a href="#">Lesson 10 - Phonics CVC words </a></li>
+            <li><a href="#">Lesson 12 and 13 - Review </a></li>
           </ul>
-          <a class="choice" href="#">اختبار الوحدة</a>
+          <div class="quiz-btn"><a href="#">اختبار الوحدة</a></div>
+        </div>
         </div>
       </div>
       <!-- نهاية الفصل الأول -->
 
       <!-- بداية الفصل الثاني -->
-      <div class="semester2" id="sem2">
-        <h1>اللغة الإنجليزية - الفصل الثاني</h1>
+      <div class="section2" id="sem2">
+        <div class="subtitle"><h2>اللغة الإنجليزية - الفصل الثاني</h2></div>
 
+        <div class="allUnits">
         <div class="unit">
-          <h2>Intro: Welcome & Who's This?</h2>
-          <a class="choice" href="#">اختبار الوحدة</a>
+          <div class="unit-title"><h2>?Intro: Welcome & Who's This</h2></div>
+          <div class="quiz-btn"><a href="#">اختبار الوحدة</a></div>
         </div>
 
         <div class="unit">
-          <h2>Unit 5: My Body</h2>
-          <ul>
-            <li>Lesson 1 and 2 -1</li>
-            <li>Lesson 3 and 4 -2</li>
-            <li>Lesson 5 and 6 -3</li>
-            <li>Lesson 7 and 8 -4</li>
-            <li>Lesson 9 -5</li>
-            <li>Lesson 10 -6</li>
+          <div class="unit-title"><h2>Unit 5: My Body</h2></div>
+          <ul class="lessons">
+            <li><a href="#">Lesson 1 and 2 </a></li>
+            <li><a href="#">Lesson 3 and 4 </a></li>
+            <li><a href="#">Lesson 5 and 6 </a></li>
+            <li><a href="#">Lesson 7 and 8 </a></li>
+            <li><a href="#">Lesson 9 </a></li>
+            <li><a href="#">Lesson 10 </a></li>
           </ul>
-          <a class="choice" href="#">اختبار الوحدة</a>
+          <div class="quiz-btn"><a href="#">اختبار الوحدة</a></div>
         </div>
 
         <div class="unit">
-          <h2>Unit 6: My Blue Jacket</h2>
-          <ul>
-            <li>Lesson 1 and 2 -1</li>
-            <li>Lesson 3 and 4 (Language practice) -2</li>
-            <li>Story - Lesson 5 and 6 -3</li>
-            <li>Lesson 7 and 8 (Language practice) -4</li>
-            <li>Lesson 9 - Phonics JJ, Uu -5</li>
-            <li>Lesson 10 - Phonics Oo, Nn -6</li>
+          <div class="unit-title"><h2>Unit 6: My Blue Jacket</h2></div>
+          <ul class="lessons">
+            <li><a href="#">Lesson 1 and 2 </a></li>
+            <li><a href="#">Lesson 3 and 4 (Language practice) </a></li>
+            <li><a href="#">Story - Lesson 5 and 6 </a></li>
+            <li><a href="#">Lesson 7 and 8 (Language practice) </a></li>
+            <li><a href="#">Lesson 9 - Phonics JJ, Uu </a></li>
+            <li><a href="#">Lesson 10 - Phonics Oo, Nn </a></li>
           </ul>
-          <a class="choice" href="#">اختبار الوحدة</a>
+          <div class="quiz-btn"><a href="#">اختبار الوحدة</a></div>
         </div>
 
         <div class="unit">
-          <h2>Unit 7: They're Tigers!</h2>
-          <ul>
-            <li>Lesson 1 and 2 -1</li>
-            <li>Lesson 3 and 4 (Language practice) -2</li>
-            <li>Story - Lesson 5 and 6 -3</li>
-            <li>Lesson 7 and 8 (Language practice) -4</li>
-            <li>Lesson 9 - Phonics Zz, Kk, Qq -5</li>
-            <li>Lesson 10 - Phonics Xx, Vv, Yy -6</li>
+          <div class="unit-title"><h2>Unit 7: They're Tigers!</h2></div>
+          <ul class="lessons">
+            <li><a href="#">Lesson 1 and 2 </a></li>
+            <li><a href="#">Lesson 3 and 4 (Language practice) </a></li>
+            <li><a href="#">Lesson 7 and 8 (Language practice) </a></li>
+            <li><a href="#">Lesson 9 - Phonics Zz, Kk, Qq </a></li>
+            <li><a href="#">Lesson 10 - Phonics Xx, Vv, Yy </a></li>
           </ul>
-          <a class="choice" href="#">اختبار الوحدة</a>
+          <div class="quiz-btn"><a href="#">اختبار الوحدة</a></div>
         </div>
 
         <div class="unit">
-          <h2>Unit 8: I Like Cakes</h2>
-          <ul>
-            <li>Lesson 1 and 2 -1</li>
-            <li>Lesson 3 and 4 (Language practice) -2</li>
-            <li>Story - Lesson 5 and 6 -3</li>
-            <li>Lesson 7 and 8 (Language practice) -4</li>
-            <li>Lesson 9 - Phonics words -5</li>
-            <li>Lesson 10 - Phonics words -6</li>
+          <div class="unit-title"><h2>Unit 8: I Like Cakes</h2></div>
+          <ul class="lessons">
+            <li><a href="#">Lesson 1 and 2 </a></li>
+            <li><a href="#">Lesson 3 and 4 (Language practice) </a></li>
+            <li><a href="#">Story - Lesson 5 and 6 </a></li>
+            <li><a href="#">Lesson 7 and 8 (Language practice) </a></li>
+            <li><a href="#">Lesson 9 - Phonics words </a></li>
+            <li><a href="#">Lesson 10 - Phonics words </a></li>
           </ul>
-          <a class="choice" href="#">اختبار الوحدة</a>
+          <div class="quiz-btn"><a href="#">اختبار الوحدة</a></div>
         </div>
       </div>
       <!-- نهاية الفصل الثاني -->
+       </div>
+       </div>
 
       <!-- image2 -->
       <div class="img2">
