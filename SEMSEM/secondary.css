@@ -4,7 +4,7 @@
 }
 
 body {
-    background: linear-gradient(135deg,white,#B5F4B5 );
+    background: linear-gradient(135deg, white, #B5F4B5);
     text-align: center;
 }
 
@@ -16,18 +16,21 @@ body {
 
 /*navbar*/
 .navbar {
-    display: flex;
+  
+        display: flex;
     align-items: center;
-    gap: 155px;
-    padding: 15px 20px;
+    gap:12rem;
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
     border-bottom: 1px solid;
     position: fixed;
     z-index: 5;
-    width: 100%;
-    background: linear-gradient(135deg, #c2e4ff, #ead3f8);
+    width:100%;
+      background: linear-gradient(135deg, #c2e4ff, #ead3f8);
     border-bottom: 4px solid #a77cc2;
     border-radius: 0 0 15px 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+
 }
 
 .nav-links {
@@ -35,53 +38,51 @@ body {
     display: flex;
 }
 
-    .nav-links a {
-        text-decoration: none;
-        color: #4d8074;
-        font-weight: 600;
-        font-size: 1.1rem;
-        transition: all 0.3s ease;
-        padding: 4px 10px;
-        border-radius: 20px;
-        position: relative;
-    }
+.nav-links a {
+    text-decoration: none;
+    color: #4d8074;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 4px 10px;
+    border-radius: 20px;
+    position: relative;
+}
 
-        .nav-links a:hover {
-            background-color: #e0d0e9;
-            padding: 5px 30px 5px 5px;
-            transform: scale(1.1);
-        }
+.nav-links a:hover {
+    background-color: #e0d0e9;
+    padding: 5px 30px 5px 5px;
+    transform: scale(1.1);
+}
 
-        .nav-links a::before {
-            content: '🌟';
-            position: absolute;
-            right: 15px;
-            opacity: 0;
-            transition: all 0.3s ease;
-        }
+.nav-links a::before {
+    content: '🌟';
+    position: absolute;
+    right: 5px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
 
-        .nav-links a:hover::before {
-            opacity: 1;
-            right: 5px;
-        }
-
+.nav-links a:hover::before {
+    opacity: 1;
+    right: 1px;
+}
 
 /*logo*/
 .logo {
     transition: all 0.3s ease;
 }
 
-    .logo img {
-        width: 15vw;
-        height: 15vh;
-    }
+.logo img {
+    width: 15vw;
+    height: 15vh;
+}
 
-    .logo:hover {
-        transform: scale(1.05);
-    }
+.logo:hover {
+    transform: scale(1.05);
+}
 
 /*main*/
-
 main {
     padding: 200px 50px 0 50px;
 }
@@ -92,9 +93,9 @@ main {
     color: #4d8074;
 }
 
-    .title span {
-        color: #a77cc2;
-    }
+.title span {
+    color: #a77cc2;
+}
 
 /*grade boxes*/
 .sub-title {
@@ -145,7 +146,6 @@ main {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-
 /*back button*/
 .back-button {
     background: #7db4e0;
@@ -158,20 +158,19 @@ main {
     width: 15rem;
 }
 
-    .back-button a {
-        text-decoration: none;
-        font-size: 2rem;
-        color: white;
-        font-weight: bold;
-    }
+.back-button a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
 
-    .back-button:hover {
-        transform: translateX(-5px);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        background-color: #a77cc2;
-        cursor: pointer;
-    }
-
+.back-button:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #a77cc2;
+    cursor: pointer;
+}
 
 /*study motivation*/
 .study-motivation {
@@ -185,15 +184,14 @@ main {
     color: #4d8074;
 }
 
-    .study-motivation h3 {
-        font-size: 1.4rem;
-        color: #4d8074;
-    }
+.study-motivation h3 {
+    font-size: 1.4rem;
+    color: #4d8074;
+}
 
-    .study-motivation span {
-        color: #a77cc2
-    }
-
+.study-motivation span {
+    color: #a77cc2;
+}
 
 /*wisdom*/
 .wisdom {
@@ -205,8 +203,6 @@ main {
     text-align: center;
     line-height: 1.8;
 }
-
-
 
 /*footer*/
 .footer {
@@ -232,10 +228,10 @@ main {
     color: #4d8074;
 }
 
-    .contact a {
-        text-decoration: none;
-        color: #4d8074;
-    }
+.contact a {
+    text-decoration: none;
+    color: #4d8074;
+}
 
 /*footer bottom*/
 .footer-bottom {
@@ -248,15 +244,14 @@ main {
     color: #4d8074;
 }
 
-    .footer-bottom a {
-        text-decoration: none;
-        color: #4d8074;
-    }
+.footer-bottom a {
+    text-decoration: none;
+    color: #4d8074;
+}
 
-        .footer-bottom a:hover {
-            transform: scale(1.1);
-        }
-
+.footer-bottom a:hover {
+    transform: scale(1.1);
+}
 
 /*Slide-in*/
 .slide-in {
@@ -265,7 +260,99 @@ main {
     transition: all 0.9s ease-out;
 }
 
-    .slide-in.visible {
-        opacity: 1;
-        transform: translateX(0);
+.slide-in.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
     }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 25vw;
+        height: auto;
+    }
+
+    main {
+        padding: 150px 20px 0 20px;
+    }
+
+    .grades {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "grade11"
+            "grade12";
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .semsem,
+    .contact {
+        width: 90%;
+    }
+
+    .footer-bottom {
+        font-size: 0.9rem;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo img {
+        width: 40vw;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .grades h2 {
+        font-size: 1.5rem;
+    }
+
+    .back-button {
+        width: 12rem;
+        padding: 15px;
+    }
+
+    .back-button a {
+        font-size: 1.5rem;
+    }
+
+    .study-motivation {
+        padding: 1.5rem;
+        border-right: none;
+        border-left: 6px solid #a77cc2;
+        text-align: center;
+    }
+
+    .wisdom {
+        font-size: 1.5rem;
+    }
+
+    .nav-links a {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        gap:1px;
+    }
+}

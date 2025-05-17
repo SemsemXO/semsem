@@ -252,15 +252,15 @@ main{
     padding: 0.5rem 1.4rem 0.5rem 1.4rem;
     }
     .navbar a{
-        font-size:0.8rem;
+        font-size:0.6rem;
         
     }
     .nav-links a:hover {
         padding:0.1rem 1.5rem 0.1rem 1.5rem;
     }
     .logo img{
-        width:18vw;
-        height:18vh;
+        width:25vw;
+        height:25vh;
     }
     .title{
         font-size:1rem;
@@ -316,5 +316,12 @@ main{
                 "grade5 grade6";
                 gap:2rem;
               }
+            .footer-content{
+                flex-direction: column;
+            }
+            .semsem,.contact{
+                width:100%;
+                margin:1rem;
+            }
             
     }
