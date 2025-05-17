@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background: linear-gradient(135deg, white, #C2E4FF);
+  background: linear-gradient(135deg, white, #c2e4ff);
   text-align: center;
 }
 .marhey-font {
@@ -16,16 +16,17 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  gap: 4rem;
-  padding: 0.5rem 1.2rem;
-  border-bottom: 4px solid #F5F56B;
+  gap: 12rem;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+  border-bottom: 1px solid;
   position: fixed;
   z-index: 5;
   width: 100%;
-  background: #B5F4B5;
+  background: #b5f4b5;
+  border-bottom: 4px solid #f5f56b;
   border-radius: 0 0 15px 15px;
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex-wrap: wrap;
 }
 .nav-links {
   list-style-type: none;
@@ -35,7 +36,7 @@ body {
 }
 .nav-links a {
   text-decoration: none;
-  color: #4297D4;
+  color: #4297d4;
   font-weight: 600;
   font-size: 1.1rem;
   transition: all 0.3s ease;
@@ -43,12 +44,12 @@ body {
   position: relative;
 }
 .nav-links a:hover {
-  background-color: #F5F56B;
+  background-color: #f5f56b;
   padding: 0.1rem 2rem;
   transform: scale(1.1);
 }
 .nav-links a::before {
-  content: '🌟';
+  content: "🌟";
   position: absolute;
   right: 15px;
   opacity: 0;
@@ -69,8 +70,8 @@ body {
   transition: all 0.3s ease;
 }
 .logo img {
-  max-width: 100px;
-  height: auto;
+  width: 15vw;
+  height: 15vh;
 }
 .logo:hover {
   transform: scale(1.05);
@@ -83,7 +84,7 @@ main {
 .title {
   font-size: 1.4rem;
   margin-bottom: 3rem;
-  color: #4297D4;
+  color: #4297d4;
 }
 .title span {
   color: #e9e955;
@@ -91,7 +92,7 @@ main {
 .sub-title {
   font-size: 1.2rem;
   grid-area: title;
-  color: #4297D4;
+  color: #4297d4;
   font-weight: 700;
 }
 .grades > div {
@@ -100,11 +101,11 @@ main {
   padding: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border: 3px dashed #F5F56B;
+  border: 3px dashed #f5f56b;
 }
 .grades a {
   text-decoration: none;
-  color: #4297D4;
+  color: #4297d4;
 }
 .grades {
   display: grid;
@@ -137,13 +138,13 @@ main {
   grid-area: grade10;
 }
 .grade7:hover {
-  background: #EAD3F8;
+  background: #ead3f8;
 }
 .grade8:hover {
-  background: #C2E4FF;
+  background: #c2e4ff;
 }
 .grade9:hover {
-  background: #FFF4B8;
+  background: #fff4b8;
 }
 .grade10:hover {
   background: #c5f1c5;
@@ -173,17 +174,17 @@ main {
 
 .study-motivation {
   background: #f8f9fa;
-  border-right: 8px solid #F5F56B;
+  border-right: 8px solid #f5f56b;
   padding: 2rem;
   margin: 5rem auto;
   border-radius: 0 8px 8px 0;
   max-width: 75rem;
   text-align: right;
-  color: #4297D4;
+  color: #4297d4;
 }
 .study-motivation h3 {
   font-size: 1.4rem;
-  color: #4297D4;
+  color: #4297d4;
 }
 .study-motivation span {
   color: #e9e955;
@@ -203,8 +204,8 @@ main {
 /* Footer */
 .footer {
   padding: 4rem 3rem 1rem 3rem;
-  background: #B5F4B5;
-  border-top: 4px solid #F5F56B;
+  background: #b5f4b5;
+  border-top: 4px solid #f5f56b;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .footer-content {
@@ -216,11 +217,11 @@ main {
 .semsem,
 .contact {
   width: 40%;
-  color: #4297D4;
+  color: #4297d4;
 }
 .contact a {
   text-decoration: none;
-  color: #4297D4;
+  color: #4297d4;
 }
 .footer-bottom {
   margin-top: 2rem;
@@ -229,11 +230,11 @@ main {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  color: #4297D4;
+  color: #4297d4;
 }
 .footer-bottom a {
   text-decoration: none;
-  color: #4297D4;
+  color: #4297d4;
 }
 .footer-bottom a:hover {
   transform: scale(1.1);
@@ -308,7 +309,7 @@ main {
     padding: 1rem;
     font-size: 0.9rem;
     border-right: none;
-    border-left: 8px solid #F5F56B;
+    border-left: 8px solid #f5f56b;
     text-align: center;
   }
   .study-motivation h3 {
