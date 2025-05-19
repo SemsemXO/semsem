@@ -96,7 +96,7 @@ ul {
 main {
     padding: 200px 50px 0 50px;
     display: flex;
-    gap:10rem;
+    gap:8rem;
 }
 
 /*navigation*/
@@ -108,12 +108,17 @@ main {
     border-radius: 25px;
     border-bottom:solid 5px #f3cc4a;
     border-left:solid 5px #f3cc4a;
-    padding:35px 20px;
+    padding:35px 10px;
 }
 .lessons-links ul{
     display: flex;
     flex-direction: column;
     gap:0.8rem;
+}
+
+.nav-title{
+    color:#f3cc4a;
+    font-weight: bold;
 }
 .nav-title{
     font-weight:900;
@@ -122,10 +127,11 @@ main {
     color:#fca4a4;
     font-weight: bold;
 }
-.lessons-links a{
+.nav-item{
     color:#76d176;
+    font-size:0.85rem;
 }
-.lessons-links a:hover{
+.nav-item:hover{
     background:#fca4a4;
     border-radius: 20px;
     padding:5px;
@@ -239,6 +245,7 @@ main {
 .image img{
     border-radius:25px;
     margin-bottom:5px;
+    width:100%;
 }
 .image p{
     color:#fca4a4;
@@ -318,13 +325,192 @@ main {
 
 /* I'll do it tomorrow :) */
 @media (max-width: 600px) {
-   
+   .navbar {
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+   }
+
+   .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.1rem;
+    }
+
+   .nav-links li {
+    padding:5px;
+   }
+
+   .nav-links li:hover {
+   transform: scale(1.05);
+   padding-right:30px;
+   }
+
+   .nav-links li::before {
+     font-size: 0.9rem;
+    }
+
+    /*logo*/
+   .logo {
+    padding-right:0;
+    }
+
+   .logo img {
+    width: 20vw;
+    }
+
+    
+    main {
+    padding: 150px 20px 0 20px;
+    flex-direction: column;
+    gap:1.5rem;
+    }
+
+    /*navigation*/
+    .lessons-links{
+        flex-direction: row;
+        padding:30px 10px;
+        gap:0.5rem;
+    }
+
+    .unit-title{
+        font-size:0.55rem !important;
+    }
+
+    .nav-item{
+        font-size:0.5rem !important;
+    }
+
+    /*page head*/
+    .page-head{
+      margin-bottom:50px;
+    }
+    .title{
+     font-size:1.3em;
+    }
+    .subtitle{
+    font-size: 1.1rem;
+    }
+
+/*back and next buttons*/
+   .back-next a{
+    font-size:0.5rem !important;
+    padding:10x;
+    }
+
+
+/*lesson content*/
+    .video-container iframe{
+    width: 100%;
+    height: 300px;
+    }
+
+/*main idea box*/
+   .main-idea h3,
+   .similarities h3,
+   .differences h3{
+    font-size: 1.2rem;
+    padding: 3px;
+    }
+    .main-idea p,
+    .similarities ul,
+    .differences ul{
+    font-size: 1rem;
+    padding:18px;
+
+    }
+
+
+    .image img{
+        width:70%;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contact *,
+    .semsem *,
+    .footer-bottom *{
+        font-size: 0.7rem;
+    } 
+
+    .contact{
+        width: 100%;
+    }
+            
+    .semsem{
+        width: 100%;
+    }
+
+
 }
 
 
 
 @media (max-width: 1024px) {
-    
+
+    .logo img {
+    width: 30vw;
+    }
+
+    main {
+    padding: 250px 10px 0 10px;
+    flex-direction: column;
+    gap:1.5rem;
+    }
+
+    /*navigation*/
+    .lessons-links,
+    .nav-title{
+        justify-content: center;
+        flex-direction: row;
+    }
+     .unit-title{
+        font-size:1.3rem;
+    }
+
+    .nav-item{
+        font-size:1rem;
+    }
+
+
+    /*page head*/
+    .title{
+     font-size:1.5em;
+    }
+    .subtitle{
+    font-size: 1.3rem;
+    }
+
+/*back and next buttons*/
+   .back-next a{
+    font-size:1rem;
+    padding:10x;
+    }
+
+/*main idea box*/
+   .main-idea h3,
+   .similarities h3,
+   .differences h3{
+    font-size: 1.3rem;
+    }
+    .main-idea p,
+    .similarities ul,
+    .differences ul{
+    font-size: 1.2rem;
+    }
+
+
+    .image img{
+        width:70%;
+    }
 }
 
 
