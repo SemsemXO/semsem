@@ -9,127 +9,147 @@
     />
     <meta
       name="keywords"
-      content="تعليم, الأردن, منصة تعليمية, توجيهي, الصف الاول, سمسم, semsem,العلوم ,علوم " />
+      content="تعليم, الأردن, منصة تعليمية, توجيهي, الصف الاول, سمسم, semsem,العلوم ,علوم"
+    />
     <link rel="icon" href="images/semsem1.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+      <link href="science.css" rel="stylesheet">
     <title> العلوم  || الصف الأول</title>
   </head>
   <body>
-    
-    <div class="header">
-      <h1>   العلوم    </h1>
-    </div>
-    <!-- أزرار التنقل -->
-    <div class="top-buttons">
-      <a href="index.html">الصفحة الرئيسية</a>
-      <button onclick="history.back()">رجوع</button>
-    </div>
-
-    <nav>
-      <a href="#">الفصل الأول</a>
-      <a href="#">الفصل الثاني</a>
-    </nav>
-
-
-    <main>
-
-      <!-- الفصل الأول -->
-      <div class="semester1" id="sem1">
-        <h1>    الفصل الأول    </h1>
-        <div class="unit">
-          <h2>      الوحدة الأولى ||الإنسان والصحة  </h2>
-          <ul>
-            
-            <li>     الدرس الأول || نحن متشابهون </li>
-            <li>  الدرس الثاني || حاجات الإنسان الأساسية </li>
-            <li>      الدرس لثالث || صحة جسم الإنسان   </li>
-            <li>       مراجعة الوحدة الأولى    </li>
-          </ul>
-          <a class="choice" href="#"> اختبار الوحدة الأولى  </a>
+    <header class="navbar marhey-font fade-in">
+        <div class="logo">
+            <img src="images/semsem1.png" alt="شعار SEMSEM" />
         </div>
-        <div class="unit">
-          <h2>    الوحدة الثانية || النباتات والحيوانات   </h2>
-          <ul>
 
-            <li>   الدرس الأول || النباتات وأجزاؤها   </li>
-            <li>     الدرس الثاني ||  حاجات النباتات  </li>
-            <li>   الدرس الثالث || الحيوانات وأجزاؤها    </li>
-            <li>      الدرس الرابع || حاجات الحيوانات  </li>
-            <li>   مراجعة الوحدة الثانية   </li>
-            
-          </ul>
-          <a class="choice" href="#">  أختبار الوحدة الثانية  </a>
-        </div>
-        <div class="unit">
-          <h2> الوجدة الثالثة || أماكن عيش  الكائنات الحية   </h2>
-          <ul>
-            <li>    الدرس الأول || البيئة   </li>
-            <li>     الدرس الثاني || السلسلة الغذائية   </li>
-            <li>     الدرس الثالث || المحميات الطبيعية  </li>
-            <li>      مراجعة الوحدة الثالثة  </li>
-            
-          </ul>
-          <a class="choice" href="#">     أختبار الوحدة الثالثة  </a>
-        </div>
-      </div>
-      <!--تحميل كتاب الفصل الأول-->
-      <div>
-        <a class="download" href="كتاب-الفصل-الأول.pdf" download> تحميل كتاب الفصل الأول</a>
-      </div>
-
-      <!-- الفصل الثاني -->
-      <div class="semester2" id="sem2">
-        <h1>العلوم - الفصل الثاني</h1>
-        <div class="unit">
-          <h2>    الوحدة الرابعة || الحركة والقوة    </h2>
-          <ul>
-
-            <li>    الدرس الأول || الموقع والحركه   </li>
-            <li>    الدرس الثاني || تأثير القوة    </li>
-            <li>      مراجعة الوحدة الرابعة  </li>
-  
-          </ul>
-          <a class="choice" href="#">اختبار الوحدة الرابعة</a>
-        </div>
-        <div class="unit">
-          <h2>      الوحدة الخامسة || علوم الأرض والفضاء   </h2>
-          <ul>
-           <li>     الدرس الأول || الأرض والسماء  </li>
-            <li>     الدرس الثانس || الفصول الأربعه   </li>
-            <li>     الدرس الثالث || الصخور في حياتنا  </li>
-            <li>    الدرس الرابع || المحافظة على المياه </li>
-            <li>     مراجعة الوحدة الخامسة   </li>
-            
-          </ul>
-          <a class="choice" href="#">اختبار الوحدة الخامسة</a>
-        </div>
-        <div class="unit">
-          <h2>       الوحدة السادسة || المادة في عالمنا    </h2>
-          <ul>
-            <li>     الدرس الأول || المواد واستخداماتها </li>
-            <li>     الدرس الثاني || تصنيف المواد   </li>
-            <li>      الدرس الثالث || حالات المادة  </li>
-            <li>     مراجعة الوحدة السادسة   </li>
-            
-          </ul>
-          <a class="choice" href="#">اختبار الوحدة السادسة</a>
-        </div>
-        
         <div>
-          <a class="download" href="كتاب-الفصل-الثاني.pdf" download> تحميل كتاب الفصل الثاني</a>
+            <ul class="nav-links">
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="grade1.html">رجوع</a></li>
+            </ul>
         </div>
-      </div>
-    </main>
+    </header>
 
 
+    
+    <main class="marhey-font">
+   
+    <div class="title fade-in"><h1> العلوم </h1></div>
 
-    <!-- footer -->
-    <footer class="marhey-font footer">
+    <!-- أزرار التنقل -->
+    <nav class="nav-btn fade-in">
+      <div><a href="index.html">الصفحة الرئيسية</a></div>
+      <div><a onclick="history.back()">رجوع</a></div>
+      <div><a href="#">الفصل الأول</a></div>
+      <div><a href="#">الفصل الثاني</a></div>
+
+    </nav>
+    <div class="sections">
+      <!-- الفصل الأول -->
+     <div class="section1" id="sem1">
+  <div class="subtitle fade-in"><h2>الفصل الأول</h2></div>
+
+  <div class="allUnits">
+    <!-- الوحدة الأولى -->
+    <div class="unit fade-in">
+      <div class="unit-title"><h1>الوحدة الأولى || الإنسان والصحة</h1></div>
+      <ul class="lessons">
+        <li><a href="#">الدرس الأول || نحن متشابهون</a></li>
+        <li><a href="#">الدرس الثاني || حاجات الإنسان الأساسية</a></li>
+        <li><a href="#">الدرس الثالث || صحة جسم الإنسان</a></li>
+        <li><a href="#">مراجعة الوحدة الأولى</a></li>
+      </ul>
+      <div class="quiz-btn"><a href="#">اختبار الوحدة الأولى</a></div>
+    </div>
+
+    <!-- الوحدة الثانية -->
+    <div class="unit fade-in">
+      <div class="unit-title"><h1>الوحدة الثانية || النباتات والحيوانات</h1></div>
+      <ul class="lessons">
+        <li><a href="#">الدرس الأول || النباتات وأجزاؤها</a></li>
+        <li><a href="#">الدرس الثاني || حاجات النباتات</a></li>
+        <li><a href="#">الدرس الثالث || الحيوانات وأجزاؤها</a></li>
+        <li><a href="#">الدرس الرابع || حاجات الحيوانات</a></li>
+        <li><a href="#">مراجعة الوحدة الثانية</a></li>
+      </ul>
+      <div class="quiz-btn"><a href="#">اختبار الوحدة الثانية</a></div>
+    </div>
+
+    <!-- الوحدة الثالثة -->
+    <div class="unit fade-in">
+      <div class="unit-title"><h1>الوحدة الثالثة || أماكن عيش الكائنات الحية</h1></div>
+      <ul class="lessons">
+        <li><a href="#">الدرس الأول || البيئة</a></li>
+        <li><a href="#">الدرس الثاني || السلسلة الغذائية</a></li>
+        <li><a href="#">الدرس الثالث || المحميات الطبيعية</a></li>
+        <li><a href="#">مراجعة الوحدة الثالثة</a></li>
+      </ul>
+      <div class="quiz-btn"><a href="#">اختبار الوحدة الثالثة</a></div>
+    </div>
+  </div>
+
+  <!-- تحميل كتاب الفصل الأول -->
+  <div class="books fade-in">
+    <div class="download-btn"><a href="كتاب-الفصل-الأول.pdf" download>تحميل كتاب الفصل الأول</a></div>
+  </div>
+</div>
+
+<!-- الفصل الثاني -->
+<div class="section2" id="sem2">
+  <div class="subtitle"><h2>العلوم - الفصل الثاني</h2></div>
+
+  <div class="allUnits">
+    <!-- الوحدة الرابعة -->
+    <div class="unit  fade-in">
+      <div class="unit-title"><h1>الوحدة الرابعة || الحركة والقوة</h1></div>
+      <ul class="lessons">
+        <li><a href="#">الدرس الأول || الموقع والحركة</a></li>
+        <li><a href="#">الدرس الثاني || تأثير القوة</a></li>
+        <li><a href="#">مراجعة الوحدة الرابعة</a></li>
+      </ul>
+      <div class="quiz-btn"><a href="#">اختبار الوحدة الرابعة</a></div>
+    </div>
+
+    <!-- الوحدة الخامسة -->
+    <div class="unit fade-in">
+      <div class="unit-title"><h1>الوحدة الخامسة || علوم الأرض والفضاء</h1></div>
+      <ul class="lessons">
+        <li><a href="#">الدرس الأول || الأرض والسماء</a></li>
+        <li><a href="#">الدرس الثاني || الفصول الأربعة</a></li>
+        <li><a href="#">الدرس الثالث || الصخور في حياتنا</a></li>
+        <li><a href="#">الدرس الرابع || المحافظة على المياه</a></li>
+        <li><a href="#">مراجعة الوحدة الخامسة</a></li>
+      </ul>
+      <div class="quiz-btn"><a href="#">اختبار الوحدة الخامسة</a></div>
+    </div>
+
+    <!-- الوحدة السادسة -->
+    <div class="unit fade-in">
+      <div class="unit-title"><h1>الوحدة السادسة || المادة في عالمنا</h1></div>
+      <ul class="lessons">
+        <li><a href="#">الدرس الأول || المواد واستخداماتها</a></li>
+        <li><a href="#">الدرس الثاني || تصنيف المواد</a></li>
+        <li><a href="#">الدرس الثالث || حالات المادة</a></li>
+        <li><a href="#">مراجعة الوحدة السادسة</a></li>
+      </ul>
+      <div class="quiz-btn"><a href="#">اختبار الوحدة السادسة</a></div>
+    </div>
+  </div>
+
+  <!-- تحميل كتاب الفصل الثاني -->
+  <div class="books fade-in">
+    <div class="download-btn"><a href="كتاب-الفصل-الثاني.pdf" download>تحميل كتاب الفصل الثاني</a></div>
+  </div>
+</div>
+</main>
+
+
+    <!-- Footer -->
+    <footer class="marhey-font footer fade-in">
       <div class="footer-content">
         <div class="semsem">
           <h3>منصة سمسم التعليمية</h3>
@@ -161,5 +181,6 @@
         </p>
       </div>
     </footer>
+  <script src="science.js"></script>
   </body>
 </html>
