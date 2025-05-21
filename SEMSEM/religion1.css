@@ -1,0 +1,217 @@
+body {
+    font-family: 'Marhey', sans-serif;
+    background-color: #ffde8e;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    color: #2a5885;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*  رسالة ترحيبية */
+.header {
+    background-color: #dec787;
+    padding: 15px 25px;
+    text-align: center;
+    border-bottom: dashed
+}
+
+    .header h1 {
+        margin: 0;
+    }
+
+
+/* أزرار التنقل  */
+.top-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #dec787;
+    padding: 10px;
+}
+
+    .top-buttons a, .top-buttons button {
+        padding: 8px 16px;
+        font-family: 'Marhey', sans-serif;
+        background-color: #74577c;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+        .top-buttons a :hover, .top-buttons button:hover {
+            color: #2a5885;
+            border: 1px groove #2a5885;
+            background-color: #f0f8ff;
+            transform: scale(1.2);
+        }
+
+
+/* شريط التنقل */
+nav {
+    text-align: center;
+    margin: 15px 0;
+}
+
+    nav a {
+        padding: 12px 20px;
+        font-size: x-large;
+        background-color: #a8d0eb;
+        color: #2a5885;
+        margin: 5px;
+        text-decoration: none;
+        border: 3px groove #2a5885;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: transform 0.2s ease;
+    }
+
+        nav a:hover {
+            background-color: #e6f2ff;
+            font-size: large;
+            border: 3px solid #a8d0eb;
+            transform: scale(1.2)
+        }
+
+
+/* محتوى الدروس */
+.main {
+    padding: 20px;
+}
+
+.unit {
+    background-color: #184672;
+    color: #e6f2ff;
+    font-size: xx-large;
+    border: 5px solid #a8d0eb;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+    .unit ul {
+        padding-right: 20px;
+        font-size: large;
+    }
+
+    .unit li {
+        margin: 5px 0;
+    }
+
+
+    /* choice */
+    .unit a {
+        padding-right: 30px;
+        color: gold;
+        font-weight: bold;
+        text-decoration: underline;
+        display: block;
+        margin-top: 10px;
+        border: 2px solid #e6f2ff;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+        .unit a:hover {
+            border: 2px solid gold;
+            transform: scale(1.2);
+        }
+
+
+/* روابط تحميل الكتب */
+.download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6b0606;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 15px 0;
+    transition: transform 0.3s ease;
+}
+
+    .download:hover {
+        transform: scale(1.16);
+        color: #2a5885;
+        background-color: #e6f2ff;
+        border: 2px solid #6b0606;
+    }
+
+
+/* image */
+img {
+    max-width: 100%;
+    height: 30%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    animation: moveimgX 8s infinite;
+}
+
+@keyframes moveimgX {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(70px);
+    }
+
+    75% {
+        transform: translateX(-70px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* footer */
+footer {
+    background-color: #2a5885;
+    color: #a8d0eb;
+    padding: 30px 15px;
+    margin-top: 50px;
+    border-top: 2px dashed #ccc;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+    .footer-content div {
+        flex: 1 1 300px;
+    }
+
+.footer h3,
+.footer h4 {
+    color: #2a5885;
+}
+
+.footer a {
+    color: #e6f2ff;
+    text-decoration: none;
+}
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9em;
+    color: #ceb84b;
+}
