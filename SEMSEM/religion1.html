@@ -29,14 +29,26 @@
     </style>
 </head>
 <body>
+        <div class="navbar marhey-font fade-in">
+        <div class="logo">
+            <img src="images/semsem1.png" alt="شعار SEMSEM" />
+        </div>
+
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="grade1.html">رجوع</a></li>
+            </ul>
+        </div>
+    </div>
     <!-- رسالة ترحيبية  -->
-    <header class="header">
+    <header class="header fade-in">
         <div style="
           background-color: #f0f8ff;
           padding: 20px;
           border-radius: 15px;
           text-align: center;
-          margin-bottom: 30px;
+          margin-top: 200px;
           border: 2px dashed midnightblue;
         ">
             <h1 style="color: #2a5885">✨ مرحباً بطلاب الصف الأول الأعزاء ✨</h1>
@@ -44,33 +56,33 @@
         </div>
     </header>
 
-    <div class="header">
+    <div class="header fade-in">
 
         <h1>منصة التربية الإسلامية - الصف الأول</h1>
     </div>
 
     <!-- أزرار التنقل -->
-    <div class="top-buttons">
+    <div class="top-buttons fade-in">
         <a href="index.html">الصفحة الرئيسية</a>
         <button onclick="history.back()">رجوع</button>
     </div>
     <br />
-    <nav>
+    <nav class="fade-in">
         <a href="#sem1">الفصل الأول</a>
         <a href="#sem2">الفصل الثاني</a>
     </nav>
 
-    <main class="main">
+    <main class="main fade-in">
 
-        <div>
-            <img src="images/decoration.png" alt="decoration" />
+        <div >
+            <img class="img" src="images/decoration.png" alt="decoration" />
         </div>
 
         <!-- الفصل الأول -->
-        <div class="semester1" id="sem1">
+        <div class="semester1 fade-in" id="sem1">
             <h1> التربية الإسلامية - الفصل الأول</h1>
 
-            <div class="unit">
+            <div class="unit fade-in">
                <a href="religion1_u1_1.html">   الوحدة الأولى: أحبك  ربي </a>
                 <ul>
                     <li>الله الخالق</li>
@@ -80,7 +92,7 @@
                 <a class="choice" href="#">اختبار 1</a>
             </div>
 
-            <div class="unit">
+            <div class="unit fade-in">
                 <a href="religion1_u2_1.html">الوحدة الثانية: أهتدي بقرآني </a>
                 <ul>
                     <li>كتابي القرآن الكريم</li>
@@ -92,7 +104,7 @@
             </div>
 
 
-            <div class="unit">
+            <div class="unit fade-in">
                <a href="religion1_u3_1.html"> الوحدة الثالثة: أقتدي برسولي </a>
                 <ul>
                     <li>ولادة سيدنا محمد ﷺ</li>
@@ -103,7 +115,7 @@
             </div>
 
 
-            <div class="unit">
+            <div class="unit fade-in">
                 <a href="religion1_u4_1.html"> الوحدة الرابعة: أسمو بأخلاقي </a>
                 <ul>
                     <li>سورة العصر</li>
@@ -118,10 +130,10 @@
         </div>
 
         <!-- الفصل الثاني -->
-        <div class="semester2" id="sem2">
+        <div class="semester2 fade-in" id="sem2">
             <h1>التربية الإسلامية - الفصل الثاني</h1>
 
-            <div class="unit">
+            <div class="unit fade-in">
                <a href="religion2G1_u1_1.html"> الوحدة الأولى: الإسلام ديني </a>
                 <ul>
                     <li>سورة الإخلاص</li>
@@ -133,7 +145,7 @@
             </div>
 
 
-            <div class="unit">
+            <div class="unit fade-in">
                 <a href="religion2G1_u2_1.html">الوحدة الثانية: برحمتك نحيا </a>
                 <ul>
                     <li>سورة الفلق</li>
@@ -144,7 +156,7 @@
             </div>
 
 
-            <div class="unit">
+            <div class="unit fade-in">
                <a href="religion2G1_u3_1.html"> الوحدة الثالثة: أحبك رسولي </a>
                 <ul>
                     <li>سورة الكوثر</li>
@@ -155,7 +167,7 @@
             </div>
 
 
-            <div class="unit">
+            <div class="unit fade-in">
                <a href="religion2G1_u4_1.html"> الوحدة الرابعة: أرتقي بأخلاقي </a>
                 <ul>
                     <li>سورة الناس</li>
@@ -169,11 +181,11 @@
             <a class="download" href="كتاب-الفصل-الثاني.pdf" download>📘 تحميل كتاب الفصل الثاني</a>
         </div>
         <div>
-            <img src="images/mosque.jpg" alt="mosque" />
+            <img class="img fade-in" src="images/mosque.jpg" alt="mosque" />
         </div>
     </main>
 
-    <footer class="marhey-font footer">
+    <footer class="marhey-font footer fade-in">
         <div class="footer-content">
             <div class="semsem">
                 <h3>منصة سمسم التعليمية</h3>
@@ -205,5 +217,6 @@
             </p>
         </div>
     </footer>
+    <script src="religion1.js"></script>
 </body>
 </html>
