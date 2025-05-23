@@ -218,3 +218,20 @@ main {
 }
         
     }
+    .shape {
+      position: absolute;
+      font-size: 40px;
+      animation: fall linear;
+      color: #fff;
+    }
+
+  @keyframes fall {
+      0% {
+        transform: translateY(-4500px);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-400px);
+        opacity: 0;
+      }}
+

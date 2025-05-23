@@ -302,3 +302,20 @@ footer {
         opacity: 1;
         transform: translateY(0);
       }
+    .shape {
+      position: absolute;
+      font-size: 60px;
+      animation: fall linear;
+      color: #fff;
+    }
+
+  @keyframes fall {
+      0% {
+        transform: translateY(-6000px);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-400px);
+        opacity: 0;
+      }}
+

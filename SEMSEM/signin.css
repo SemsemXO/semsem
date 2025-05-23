@@ -16,6 +16,7 @@ body {
   align-items: center;
   height: 100vh;
   padding: 2vh;
+  overflow-y: hidden;
 }
 
 .content {
@@ -96,3 +97,4 @@ a:hover {
         opacity: 1;
         transform: translateY(0);
       }
+  

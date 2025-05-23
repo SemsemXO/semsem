@@ -383,3 +383,20 @@ height: 7rem;
         margin-top: 100px;
     }
         }
+            .shape {
+      position: absolute;
+      font-size: 50px;
+      animation: fall linear;
+      color: black;
+    }
+
+  @keyframes fall {
+      0% {
+        transform: translateY(-10000px);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-400px);
+        opacity: 0;
+      }}
+
