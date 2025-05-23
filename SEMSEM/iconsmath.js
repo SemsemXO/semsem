@@ -1,6 +1,6 @@
 
 const shapes= ['➕', '➖', '✖️', '➗', '🟰', '📐', '📏', '🧮', '🔢', '📊', '📈', '📉', '💯', '🧠', '📝', '🎓'];
-  const maxShapes = 300;
+  const maxShapes = 50;
   let count = 0;
 
   function createShape() {
