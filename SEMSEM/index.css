@@ -168,9 +168,12 @@ padding: 10px;
   font-size: 1.5rem;
   margin-bottom: 10rem;
 }
+
 .desc h1 {
   text-align: center;
 }
+
+
 
 /*join sec*/
 .join-sec {
@@ -225,6 +228,9 @@ height: auto;
 .desc-stu img {
   width: 30vw;
 }
+.desc-stu2 p{
+  margin-top: 20% ;
+}
 .goal {
   width: 100%;
   height: auto;
@@ -235,7 +241,7 @@ height: auto;
 }
 .goal p {
   height: 45vh;
-  margin-top: 10rem;
+  margin-top: 4rem;
   margin-right: 2rem;
   padding: 4rem;
   color: #6b4b8a;
