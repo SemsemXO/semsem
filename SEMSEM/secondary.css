@@ -6,6 +6,7 @@
 body {
     background: linear-gradient(135deg, white, #B5F4B5);
     text-align: center;
+    
 }
 
 .marhey-font {
@@ -274,7 +275,7 @@ main {
     }
 
     .nav-links {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
     }
 
@@ -314,11 +315,12 @@ main {
 }
 
 @media (max-width: 600px) {
+  
     .logo img {
-        width: 40vw;
+        width: 15vw;
     }
 
-    .title {
+    .title  {
         font-size: 1.2rem;
     }
 
@@ -356,3 +358,20 @@ main {
         gap:1px;
     }
 }
+    .shape {
+      position: absolute;
+      font-size: 40px;
+      animation: fall linear;
+      color: #fff;
+    }
+
+  @keyframes fall {
+      0% {
+        transform: translateY(-4500px);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-400px);
+        opacity: 0;
+      }}
+

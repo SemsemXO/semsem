@@ -1,0 +1,321 @@
+body {
+    font-family: 'Marhey', sans-serif; 
+    background-color: #e6f2ff;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*navbar*/
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:5px;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background: linear-gradient(135deg, #2a5885,#e6f2ff);
+    border-bottom: 5px white solid;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+.nav-links {
+    margin-left: 20px;
+}
+.nav-links li{
+    margin-bottom:10px;
+    position:relative;
+    background: #e6f2ff;
+    padding:10px;
+    
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+.nav-links a {
+  color: #2a5885;
+}
+
+.nav-links li:hover {
+   transform: scale(1.1);
+   cursor: pointer;
+   padding-right:40px;
+}
+
+.nav-links li::before {
+    content: "🌷ִֶָ";
+    font-size: 1.4rem;
+    position: absolute;
+    right: 15px;
+    bottom:5px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links li:hover::before {
+    opacity: 1;
+     right: 5px;
+}
+
+
+/*logo*/
+.logo {
+    padding-right:20px;
+    transition: all 0.3s ease;
+}
+
+.logo img {
+    width: 30vw;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+/*  رسالة ترحيبية */
+.header {
+    background-color: #a8d0eb ;
+    padding: 15px 25px;
+    text-align: center;
+    border-bottom:dashed
+  
+  
+}
+.header h1 {
+        margin: 0;
+      
+   }
+
+
+/* أزرار التنقل  */
+.top-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #a8d0eb;
+    padding: 10px;
+}
+
+.top-buttons a, .top-buttons button {
+        padding: 8px 16px;
+        font-family: 'Marhey', sans-serif;
+        background-color: #2a5885;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+       
+    }
+
+.top-buttons a :hover,.top-buttons button:hover {
+            color: #2a5885;
+            border: 1px groove #2a5885;
+            background-color: #f0f8ff;
+            transform: scale(1.2);
+        }
+
+  
+/* شريط التنقل */
+nav {
+    text-align: center;
+    margin: 15px 0;
+ 
+}
+
+nav a {
+        padding: 12px 20px;
+        font-size: x-large;
+        background-color: #a8d0eb;
+        color: #2a5885;
+        margin: 5px;
+        text-decoration: none;
+        border: 3px groove #2a5885;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: transform 0.2s ease;
+    }
+
+nav a:hover {
+        background-color: #e6f2ff;
+        font-size: large;
+        border: 3px solid #a8d0eb;
+        transform: scale(1.2)
+    }
+
+
+/* محتوى الدروس */
+.main {
+    padding: 20px;
+}
+
+.unit {
+    background-color: #184672;
+    color: #e6f2ff;
+    font-size: xx-large;
+    border: 5px solid #a8d0eb;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+   
+.unit ul {
+        padding-right: 20px;
+        font-size:large;
+    }
+
+.unit li {
+        margin: 5px 0;
+    }
+
+
+    /* choice */
+.unit a {
+        padding-right: 30px;
+        color: gold;
+        font-weight: bold;
+        text-decoration: underline;
+        display: block;
+        margin-top: 10px;
+        border: 2px solid #e6f2ff;
+        cursor: pointer;
+       
+    }
+
+.unit a:hover {
+            border: 2px solid gold;
+        
+        }
+
+
+    /* روابط تحميل الكتب */
+.download {
+    display: inline-block;
+    padding: 10px 20px;
+ 
+    background-color: #6b0606;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 15px 0;
+    transition: transform 0.3s ease;
+}
+
+.download:hover {
+            transform:scale(1.16);
+            color:#2a5885;
+            background-color: #e6f2ff;
+            border: 2px solid #6b0606;
+        }
+
+
+/* image */
+.img {
+    max-width: 100%;
+    height: 30%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    animation: moveimgX 8s infinite;
+}
+@keyframes moveimgX {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(70px);
+    }
+    75% {
+        transform: translateX(-70px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* footer */
+footer {
+    background-color: #2a5885;
+    color:#a8d0eb;
+    padding: 30px 15px;
+    margin-top: 50px;
+    border-top: 2px dashed #ccc;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-content div {
+        flex: 1 1 300px;
+    }
+
+.footer h3,
+.footer h4 {
+    color: #2a5885;
+}
+
+.footer a {
+    color: #e6f2ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+        text-decoration: underline;
+    }
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9em;
+    color: #ceb84b;
+}
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    .shape {
+      position: absolute;
+      font-size: 40px;
+      animation: fall linear;
+      color: #fff;
+    }
+
+  @keyframes fall {
+      0% {
+        transform: translateY(-7000px);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-400px);
+        opacity: 0;
+      }}
+
