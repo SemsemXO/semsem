@@ -38,44 +38,43 @@
   function submitExam() {
   let score = 0;
   const correctAnswers = {
-    q1: "a",
-    q2: "b",
-    q3: "d",
-    q4: "c",
-    q5: "b",
-    q6: "a",
-    q7: "d",
-    q8: "c",
-    q9: "b",
-    q10: "a",
-    q11: "b",
-    q12: "c",
-    q13: "d",
-    q14: "a",
-    q15: "b",
-    q16: "c",
-    q17: "d",
-    q18: "a",
-    q19: "b",
-    q20: "c"
+    q1: "a", q2: "b", q3: "d", q4: "c", q5: "b",
+    q6: "a", q7: "d", q8: "c", q9: "b", q10: "a",
+    q11: "b", q12: "c", q13: "d", q14: "a", q15: "b",
+    q16: "c", q17: "d", q18: "a", q19: "b", q20: "c"
   };
+
   for (let i = 1; i <= 20; i++) {
     const questionName = "q" + i;
     const selected = document.querySelector('input[name="' + questionName + '"]:checked');
-     if (!selected) {
-      alert("يرجى الإجابة على كل الأسئلة قبل الإرسال!");
-      return; // نوقف تنفيذ الدالة إذا في سؤال بدون إجابة
-    }
-    if (selected && selected.value === correctAnswers[questionName]) {
-      score += 5; 
+    const allOptions = document.querySelectorAll('input[name="' + questionName + '"]');
+
+    allOptions.forEach((option) => {
+      const label = option.closest("label");
+      if (label) {
+        label.style.color = ""; // Reset color before applying new
+      }
+    });
+
+    if (selected) {
+      const selectedLabel = selected.closest("label");
+      if (selected.value === correctAnswers[questionName]) {
+        score += 5;
+        if (selectedLabel) selectedLabel.style.color = "green";
+      } else {
+        if (selectedLabel) selectedLabel.style.color = "red";
+        // ❗ تلوين الخيار الصحيح أيضاً
+        const correctOption = document.querySelector('input[name="' + questionName + '"][value="' + correctAnswers[questionName] + '"]');
+        const correctLabel = correctOption?.closest("label");
+        if (correctLabel) correctLabel.style.color = "green";
+      }
     }
   }
 
   document.getElementById("result").textContent = "علامتك النهائية: " + score + " من 100";
 
-  if (score >=70) {
+  if (score >= 70) {
     document.getElementById("video").src = "https://cdn.htmlgames.com/WoodBlockPuzzle/";
   }
-
-
 }
+
