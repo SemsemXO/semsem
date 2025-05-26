@@ -1,0 +1,635 @@
+<<<<<<< Updated upstream
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, white, #EAD3F8);
+    text-align: center;
+}
+
+.marhey-font {
+    font-family: "Marhey", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*navbar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 155px;
+    border-bottom: 1px solid;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background: white;
+    border-bottom: 5px #be008c solid;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #be008c  ;
+    font-weight: 600;
+    font-size: 1.8rem;
+=======
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Marhey', sans-serif;
+    background: linear-gradient(to bottom, #fdf6e3, #f5f5f5);
+    color: #333;
+    direction: rtl;
+    padding-top: 80px;
+}
+
+/* Font utility */
+.marhey-font {
+    font-family: 'Marhey', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: white;
+    border-bottom: 5px #FF6B6B solid;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+     text-decoration: none;
+    color: #FF6B6B;
+    font-weight: 600;
+    font-size: 1.1rem;
+>>>>>>> Stashed changes
+    transition: all 0.3s ease;
+    padding: 4px 10px;
+    border-radius: 20px;
+    position: relative;
+}
+<<<<<<< Updated upstream
+
+.nav-links a:hover {
+    background-color: #bdf6ac;
+    padding: 5px 30px 5px 5px;
+    transform: scale(1.1);
+}
+
+.nav-links a::before {
+    content: '📍';
+    position: absolute;
+    right: 20px;
+=======
+}
+
+.nav-links a:hover {
+    background-color: #6c4400;
+}
+
+.nav-links a::before {
+    content: '🌟';
+    position: absolute;
+    right: 15px;
+>>>>>>> Stashed changes
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover::before {
+    opacity: 1;
+<<<<<<< Updated upstream
+    right: 1px;
+}
+
+/*logo*/
+.logo {
+    transition: all 0.3s ease;
+}
+
+.logo img {
+    width: 15vw;
+    height: auto;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/*main*/
+main {
+    padding: 200px 50px 0 50px;
+ 
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+      margin-top: 8%;
+    color: #733ecf;
+}
+
+.title span {
+    background: linear-gradient(45deg, #6bcbff, #733ecf, #45B7D1, #b43ac7, #FFA07A);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/*material cards*/
+.sub-title {
+    font-size: 2.4rem;
+    grid-area: title;
+  
+   color:#e4609b;
+    font-weight: 700;
+}
+
+.materials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "title title title"
+        "english  arabic math"
+        "social science religion"
+        "digital_skill Financial_culture vocational_education";
+    gap: 25px;
+}
+
+.materials > div {
+    border-radius: 20px;
+    padding: 50px 10px;
+    box-shadow: 0 4px 12px rgba(129, 0, 241, 0.6);
+    transition: all 2s ease;
+    position: relative;
+}
+
+.materials > div::before {
+    content: '✏️';
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 2.rem;
+}
+
+.materials > div:hover {
+    transform: rotateY(360deg);
+}
+
+.materials a {
+    color: white;
+    font-size: xx-large;
+}
+
+
+/*subjects*/
+
+
+.english {
+    grid-area: english;
+    background: linear-gradient(135deg, #bcff36, #b3d7b1 80%);
+}
+
+.arabic {
+    grid-area: arabic;
+    background: linear-gradient(135deg,#5e005b, #de9aeb 80%);
+}
+
+.math {
+    grid-area: math;
+    background: linear-gradient(135deg, #532dc4, #5588ff 80%);
+}
+
+
+.social {
+    grid-area: social;
+    background: linear-gradient(135deg, #f075ac, #c6025a 80%);
+}
+
+.science {
+    grid-area: science;
+    background: linear-gradient(135deg, #98ffe0, #00e79e 80%);
+}
+
+.religion {
+    grid-area: religion;
+    background: linear-gradient(135deg, #dece95, #c9bc02 80%);
+}
+.digital_skill{
+    grid-area:digital_skill;
+    background: linear-gradient(135deg, #164167, #3ea159 80%);
+}
+
+.Financial_culture{
+    grid-area:Financial_culture;
+    background: linear-gradient(135deg,  #d1ab9e, #FFA07A 80%);
+}
+
+.vocational_education{
+     grid-area: vocational_education;
+    background: linear-gradient(135deg, #450202, #c7d9e8 80%);
+}
+/*wisdom card*/
+.wisdom {
+    background: white;
+    margin: 110px;
+    padding: 60px;
+    transform: rotate(-1deg);
+    color: #45B7D1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 25px;
+    position: relative;
+}
+
+.wisdom::before {
+    content: '🌳';
+    position: absolute;
+    right: 20px;
+}
+
+/*footer*/
+.footer {
+    padding: 50px 20px 10px 20px;
+    background: white;
+    border-top: 5px #be008c solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+=======
+    right: 5px;
+}
+
+
+
+
+
+/* Title & Sub-Title */
+.title {
+   
+    text-align: center;
+    margin-top: 40px;
+    color: #ff9800;
+    animation: fadeInDown 1s ease-out;
+}
+
+.title span {
+    color: #d84315;
+}
+
+.sub-title {
+    text-align: center;
+    margin: 10px auto 30px;
+    font-size: 1.2rem;
+}
+
+/* Subject Grid */
+.materials, 
+.digital_skills,
+.Financial_culture,
+.vocational_education {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.materials > div,
+.digital_skills,
+.Financial_culture,
+.vocational_education {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #ffb300;
+    
+}
+
+.materials > div:hover,
+.digital_skills:hover,
+.Financial_culture:hover,
+.vocational_education:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.materials h2,
+.digital_skills h2,
+.Financial_culture h2,
+.vocational_education h2 {
+    font-size: 1.3rem;
+}
+
+.materials a,
+.digital_skills a,
+.Financial_culture a,
+.vocational_education a {
+    text-decoration: none;
+    color: #00796b;
+    transition: color 0.3s ease;
+}
+
+.materials a:hover,
+.digital_skills a:hover,
+.Financial_culture a:hover,
+.vocational_education a:hover {
+    color: #004d40;
+}
+
+/* Wisdom Section */
+.wisdom {
+    background: #ffe0b2;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 30px 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+/* Footer */
+.footer {
+    background: #fbc02d;
+    color: #333;
+    padding: 30px 20px 15px;
+    margin-top: 50px;
+>>>>>>> Stashed changes
+}
+
+.footer-content {
+    display: flex;
+<<<<<<< Updated upstream
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.semsem {
+    width: 40%;
+    color: #be008c;
+}
+
+.contact {
+    width: 30%;
+    color: #be008c;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #345a51;
+}
+
+/*footer bottom*/
+.footer-bottom {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #345a51;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #345a51;
+}
+
+.footer-bottom a:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .navbar {
+    gap: 50px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .logo img {
+    width: 20vw;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+   
+  }
+
+  .materials {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "english arabic"
+      "math social"
+      "science religion"
+      "digital_skill Financial_culture"
+      "vocational_education vocational_education";
+    gap: 20px;
+  }
+
+  main {
+    padding: 150px 30px 0 30px;
+  }
+
+  .wisdom {
+    margin: 50px 20px;
+    padding: 40px;
+    font-size: 1.5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .semsem, .contact {
+    width: 100%;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    .title{
+        margin: 20%;
+    }
+ .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 10vw;
+    max-width: 200px;
+    height: auto;
+
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0 1px;
+    padding-bottom: 10%;
+    gap: 8px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 6px 1px;
+    flex: 1 1 45%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+
+  .materials {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "english"
+      "arabic"
+      "math"
+      "social"
+      "science"
+      "religion"
+      "digital_skill"
+      "Financial_culture"
+      "vocational_education";
+    gap: 15px;
+  }
+
+  .sub-title {
+    font-size: 1.4rem;
+  }
+
+  .wisdom {
+    font-size: 1.2rem;
+    padding: 30px;
+    margin: 30px 10px;
+  }
+
+  .footer-bottom {
+    padding: 20px 10px;
+    text-align: center;
+  }
+}
+=======
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-content h3,
+.footer-content h4 {
+    margin-bottom: 10px;
+}
+
+.footer-content p,
+.footer-content a {
+    font-size: 0.95rem;
+    color: #3e2723;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    border-top: 1px solid #fff3e0;
+    padding-top: 10px;
+}
+
+.footer-bottom a {
+    color: #6d4c41;
+    margin: 0 8px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+>>>>>>> Stashed changes
