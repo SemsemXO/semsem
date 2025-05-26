@@ -38,10 +38,10 @@
   function submitExam() {
   let score = 0;
   const correctAnswers = {
-    q1: "a", q2: "b", q3: "d", q4: "c", q5: "b",
-    q6: "a", q7: "d", q8: "c", q9: "b", q10: "a",
-    q11: "b", q12: "c", q13: "d", q14: "a", q15: "b",
-    q16: "c", q17: "d", q18: "a", q19: "b", q20: "c"
+    q1: "a", q2: "b", q3: "c", q4: "d", q5: "a",
+    q6: "b", q7: "c", q8: "d", q9: "a", q10: "b",
+    q11: "c", q12: "d", q13: "a", q14: "b", q15: "c",
+    q16: "d", q17: "a", q18: "b", q19: "c", q20: "d"
   };
 
   for (let i = 1; i <= 20; i++) {
@@ -60,13 +60,12 @@
       const selectedLabel = selected.closest("label");
       if (selected.value === correctAnswers[questionName]) {
         score += 5;
-        if (selectedLabel) selectedLabel.style.color = "green";
+        if (selectedLabel) selectedLabel.style.backgroundColor = "green";
       } else {
-        if (selectedLabel) selectedLabel.style.color = "red";
-        // ❗ تلوين الخيار الصحيح أيضاً
+        if (selectedLabel) selectedLabel.style.backgroundColor = "red";
         const correctOption = document.querySelector('input[name="' + questionName + '"][value="' + correctAnswers[questionName] + '"]');
         const correctLabel = correctOption?.closest("label");
-        if (correctLabel) correctLabel.style.color = "green";
+        if (correctLabel) correctLabel.style.backgroundColor = "green";
       }
     }
   }
