@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, white, #b8f2e6);
+    text-align: center;
+}
+
+.marhey-font {
+    font-family: "Marhey", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*navbar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 155px;
+    border-bottom: 1px solid;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background: white;
+    border-bottom: 5px #f3b5c4  solid;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f3b5c4 ;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 4px 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.nav-links a:hover {
+    background-color: #b8f2e6;
+    color: white;
+    padding: 5px 30px 5px 5px;
+    transform: scale(1.1);
+}
+
+.nav-links a::before {
+    content: '🌟';
+    position: absolute;
+    right: 15px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover::before {
+    opacity: 1;
+    right: 5px;
+}
+
+
+
+/*logo*/
+.logo {
+    padding-right:20px;
+    transition: all 0.3s ease;
+}
+
+.logo img {
+    width: 15vw;
+    height: auto;
+    max-width: 180px;
+    max-height: 180px;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+
+
+/*main*/
+main {
+    padding: 200px 50px 0 50px;
+}
+
+/*title*/
+.title {
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+    color: #fce677;
+}
+
+.title span {
+    background: linear-gradient(45deg, #FCE677, #F3B5C4, #B8F2E6, #E6CCF2, #C2E9FB);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/*material cards*/
+.sub-title {
+    font-size: 2rem;
+    grid-area: title;
+    color: #f3b5c4;
+    font-weight: 700;
+}
+
+
+
+.materials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "title title title"
+        "math english arabic"
+        "bio chem physics"
+        "geology religion digital "
+        ".    history    .";
+    gap: 50px;
+}
+
+.materials > div {
+    border-radius: 20px;
+    padding: 50px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    background: white;
+    border: #ffefa1 solid 5px;
+}
+
+.materials > div:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+.materials a {
+    color: #f3b5c4;
+}
+
+/*subjects*/
+.arabic {
+    grid-area: arabic;
+    
+}
+.english {
+    grid-area: english;
+}
+
+.math {
+    grid-area: math;
+}
+
+.Physics{
+    grid-area: physics;
+}
+.Chemistry{
+    grid-area: chem;
+}
+.biology{
+    grid-area:bio;
+}
+
+.digital_skills{
+    grid-area: digital;
+}
+.religion {
+    grid-area: religion;
+}
+.Geology{
+    grid-area: geology ;
+}
+
+.history{
+    grid-area: history;
+}
+
+
+.arabic::after { 
+    content: '📚';  
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 2rem;
+}
+.english::after { 
+    content: '🌍';
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 2rem;
+}
+.math::after { 
+    content: '🔢';
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 2rem;
+}
+.Physics::after { 
+    content: '⚡';
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 2rem;
+}
+.Chemistry::after { 
+    content: '🧪';
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 2rem;
+}
+.biology::after { 
+    content: '🧬';
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 2rem;
+}
+.digital_skills::after { 
+    content: '💻';
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 2rem;
+}
+.religion::after { 
+    content: '🕌';
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 2rem;
+}
+.Geology::after { 
+    content: '🌋';
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 2rem;
+}
+.history::after { 
+    content: '📜';
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 2rem;
+}
+
+
+
+/*wisdom card*/
+.wisdom {
+    background: white;
+    margin: 110px;
+    padding: 60px;
+    transform: rotate(-1deg);
+    color: #ff6b8b;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 25px;
+    position: relative;
+}
+
+
+
+/*footer*/
+.footer {
+    padding: 50px 20px 10px 20px;
+    background: white;
+    border-top: 5px #f3b5c4 solid;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.semsem {
+    width: 40%;
+    color: #f3b5c4;
+}
+
+.contact {
+    width: 30%;
+    color: #f3b5c4;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #681648;
+}
+
+/*footer bottom*/
+.footer-bottom {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #681648;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #681648;
+}
+
+.footer-bottom a:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-links {
+        width: 100%;
+        margin-bottom:20px;
+    }
+
+    .nav-links a {
+        font-size: 0.70rem;
+    }
+
+    /*logo*/
+   .logo {
+    margin-top: 5px;
+    padding-right:0;
+    }
+
+   .logo img {
+    width: 20vw;
+    }
+
+    .title{
+        font-size:1rem;
+    }
+    .sub-title {
+        font-size: 1.4rem;
+    }
+
+    .materials {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "math"
+            "english"
+            "arabic"
+            "bio"
+            "chem"
+            "physics"
+            "geology"
+            "religion"
+            "digital"
+            "history";
+        gap: 20px;
+    }
+
+    .wisdom {
+       margin-right:auto;
+       margin-left: auto;
+        width: 50%;
+        font-size: 1.3rem;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contact *,
+    .semsem *,
+    .footer-bottom *{
+        font-size: 0.7rem;
+    } 
+
+    .contact{
+        width: 100%;
+    }
+            
+    .semsem{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-links {
+        width: 100%;
+        margin-bottom:20px;
+    }
+    .nav-links a {
+        font-size: 0.75rem;
+    }
+
+    /*logo*/
+   .logo {
+    margin-top: 5px;
+    padding-right:0;
+    }
+
+   .logo img {
+    width: 25vw;
+    }
+
+    .sub-title {
+        font-size: 1.5rem;
+    }
+
+    .materials {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "math english"
+            "arabic bio"
+            "chem physics"
+            "geology religion"
+            "digital history";
+        gap: 20px;
+    }
+
+    .wisdom {
+       margin-right:auto;
+       margin-left: auto;
+        width: 50%;
+        font-size: 1.3rem;
+    }
+}
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+          .shape {
+      position: absolute;
+      font-size: 40px;
+      animation: fall linear;
+      color: #fff;
+      z-index: 2;
+    }
+
+  @keyframes fall {
+      0% {
+        transform: translateY(-4500px);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-400px);
+        opacity: 0;
+      }}
+
