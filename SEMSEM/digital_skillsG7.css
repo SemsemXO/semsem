@@ -1,3 +1,179 @@
+
+body {
+  font-family: 'Marhey', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  direction: rtl;
+  color: #3c4a6d;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* header */
+.navbar {
+ background: linear-gradient(135deg, #1e5e96,#e9d2d2, #abd66a 80%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/*logo*/
+
+.logo img {
+   width: 15vw;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+
+
+}
+.logo {
+transition: all 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/*navbar*/
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+  transition:all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #dbbd43;
+background-color: white;
+border-radius: 15px;
+padding: 5px;
+}
+
+/* content*/
+main nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.semester1, .semester2 {
+  background:linear-gradient(130deg, #fff5f5,#d6e9ba);
+  border: 3px solid #435b85;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 4px 6px rgba(88, 116, 183, 0.3) ;
+}
+
+.title h2 {
+  margin-top: 0;
+  color: #80ad02;
+  font-size: 1.5em;
+}
+
+.materials {
+  list-style: none;
+  padding: 0;
+}
+
+.materials li {
+  margin: 10px 0;
+}
+
+.materials li a {
+  text-decoration: none;
+  color: #4a637d;
+  font-weight: 500;
+  transition: color 0.3s;
+  transition: all 0.2s ease;
+}
+
+.materials li a:hover {
+  color: #e5908d;
+  font-size: larger;
+   transform: scale(1.2);
+
+
+}
+
+/* Footer */
+.footer {
+ background: linear-gradient(135deg, #49779f,#d2b8b8, #a0c963 80%);
+  padding: 50px 20px 10px;
+  border-top: 5px solid #394054;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.semsem,
+.contact {
+  width: 40%;
+  color: #ffffff;
+}
+
+.contact a {
+  color: #345a51;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  color: #345a51;
+}
+
+.footer-bottom a {
+  color: #345a51;
+}
+.footer-bottom a:hover {
+  transform: scale(1.1);
+}
+/* تحسين عرض الجوال */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+ .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .semsem, .contact {
+    width: 100%;
+  }
+
+  main nav {
+    padding: 20px 10px;
+  }
+}
+
+    
+    
+    /*fade-in*/
     .fade-in {
         opacity: 0;
         transform: translateY(20px);
