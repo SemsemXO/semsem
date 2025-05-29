@@ -400,13 +400,6 @@ main {
     .welcome p{
         font-size:1rem;
     }
-    .shape {
-      position: absolute;
-      font-size: 50px;
-      animation: fall linear;
-      color: black;
-    }
-
      .title {
         font-size: 0.9rem;
     }
@@ -451,17 +444,7 @@ main {
         width: 100%;
     }
 
-  @keyframes fall {
-      0% {
-        transform: translateY(-10000px);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-400px);
-        opacity: 0;
-      }}
-
-    }
+}
 
 
 @media (max-width: 1024px) {
@@ -483,3 +466,20 @@ main {
         width: 100%;
     }
 }
+   .shape {
+      position: absolute;
+      font-size: 50px;
+      animation: fall linear;
+      color: black;
+    }
+ @keyframes fall {
+      0% {
+        transform: translateY(-10000px);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-400px);
+        opacity: 0;
+      }}
+
+    
