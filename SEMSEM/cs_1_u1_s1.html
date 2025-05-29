@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap"
       rel="stylesheet"/>
    
+      <link rel="stylesheet" href="cs_1_u1_s1.css"/>
     <title> المهارات الرقمية: الوحدة الأولى </title>
     </head>
     <body>
@@ -30,9 +31,9 @@
         </div>
 
         <div>
-            <ul class="nav-links">
-                <li><a href="index.html">الصفحة الرئيسية</a></li>
-                <li><a href="grade7.html">رجوع</a></li>
+            <ul class="nav-links" >
+                <li><a href="index.html" style="color:rgba(83, 107, 141, 0.8)" >الصفحة الرئيسية</a></li>
+                <li><a href="grade7.html" style="color:rgba(83, 107, 141, 0.8)" >رجوع</a></li>
             </ul>
         </div> 
       </header>
@@ -40,19 +41,21 @@
     <main class="marhey-font">
 
       <!-- قائمة دروس الوحده الاولى -->
-        <nav>
-  <ul class="lessons-links fade-in">
+    <nav>
+  <button class="toggle-lessons">📚 دروس الوحدة الأولى</button>
+  <ul class="lessons-links fade-in hidden">
     <li><span class="unit-title">الفصل الأول: الوحدة الأولى - أنظمة الحوسبة</span></li>
     <li><a href="cs_1_u1_s1.html" class="nav-item">جهاز الحاسوب (Computer)</a></li>
     <li><a href="cs_2_u1_s1.html" class="nav-item">مكونات الحاسوب المادية (Hardware)</a></li>
     <li><a href="cs_3_u1_s1.html" class="nav-item">مكونات الحاسوب البرمجية (Software)</a></li>
     <li><a href="cs_4_u1_s1.html" class="nav-item">أنظمة التشغيل (Operating Systems)</a></li>
-    <li><a href="cs_5_u1_s1.html" class="nav-item">تفاعل الإنسان مع أجهزة الحاسوب (Human-Computer Interaction)</a></li>
-    <li><a href="cs_6_u1_s1.html" class="nav-item">ملخص الوحدة (Unit Summary)</a></li>
-    <li><a href="cs_7_u1_s1.html" class="nav-item">أسئلة الوحدة (Unit Questions)</a></li>
-    <li><a href="cs_8_u1_s1.html" class="nav-item">تقويم ذاتي (Self-Evaluation)</a></li>
+    <li><a href="cs_5_u1_s1.html" class="nav-item">تفاعل الإنسان مع أجهزة الحاسوب</a></li>
+    <li><a href="cs_6_u1_s1.html" class="nav-item">ملخص الوحدة</a></li>
+    <li><a href="cs_7_u1_s1.html" class="nav-item">أسئلة الوحدة</a></li>
+    <li><a href="cs_8_u1_s1.html" class="nav-item">تقويم ذاتي</a></li>
   </ul>
-        </nav>
+</nav>
+
 
     <div class="content fade-in">
        <!-- أزرار التنقل -->
@@ -183,5 +186,17 @@
             </div>
         </div>
     </footer>
+
+<script>
+  const toggleBtn = document.querySelector('.toggle-lessons');
+  const lessonsList = document.querySelector('.lessons-links');
+
+  toggleBtn.addEventListener('click', () => {
+    lessonsList.classList.toggle('hidden');
+  });
+</script>
+
+
+    
  </body>
  </html>
