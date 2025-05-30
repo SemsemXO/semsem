@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="arabicG1_1_u1_s1.css"/>
    
 
     <title> اللغة العربية : الفصل الأول </title>
@@ -42,7 +43,8 @@
 
        <!-- قائمة دروس الوحده الاولى -->
         <nav>
-    <ul class="lessons-links fade-in">
+    <button class="toggle-lessons">📚 دروس الوحدة الأولى</button>
+        <ul class="lessons-links fade-in hidden">
         <a href="#" class="unit-title">الوَحْدَةُ الأُولَى: أُسْرَتِي</a>
         <li><a href="arabicG1_1_u1_s1.html" class="nav-item">الدَّرْسُ الأَوَّلُ: اسْتَمِعْ بِانْتِبَاهٍ وَتُرْكِيزٍ</a></li>
         <li><a href="arabicG1_2_u1_s1.html" class="nav-item">الدَّرْسُ الثَّانِي: تَحَدَّثْ بِطَلَاقَةٍ</a></li>
@@ -90,18 +92,18 @@
       </div>
       <div class="card2">
         <h2>(2.3) أبْنِي مُحْتَوى تَحَدُثِي </h2>
-        <h3>أتحدث عن كل صورة من الصور الآتِيَةِ، ثم أجب عن الأَسئِلَةِ:</h3>
-        <div class="image-block">
+        <h3 style="margin: 10px;">أتحدث عن كل صورة من الصور الآتِيَةِ، ثم أجب عن الأَسئِلَةِ:</h3>
+        <div class="image-block" style="margin-bottom:10%;border: 1px solid #704e3d ;">
              <img src="images/family1.jpg" alt="عائلة تقطف العنب"  class="concept-img">
              <p>ما العمل الذي تتعاون فيه الأسرة؟  تتعاون الأسرة في قطف العنب.</p>
         </div>
-       <div class="image-block">
+       <div class="image-block" style="margin-bottom:10%;border: 1px solid #704e3d ;">
             <img src="images/family2.jpg" alt="أسرة تجلس على المائدة"class="concept-img" >
             <p>ماذا تفعل الأسرة ؟  تتناول الطعام.</p>
             <p>أذكرا عددا من الأطعمة التي تتناولها الأسرة على الطعام ؟  البيض .</p>
             <p>هل تفضل تناول الطعام لوحدك أم مع أسرتك ؟</p>
        </div> 
-       <div class="image-block">
+       <div class="image-block" style="margin-bottom:10%;border: 1px solid #704e3d ;">
             <img src="images/family3.jpg" alt="أسرة تتعاون في أعمال المنزل"class="concept-img" >
             <p>ما فائدة التعاون في أعمال البيت ؟ تقوية الروابط الأسرية ، تخفيف العبء عن فرد واحد .</p>
        </div>
@@ -148,5 +150,13 @@
             </div>
         </div>
     </footer>
+    <script>
+      const toggleBtn = document.querySelector('.toggle-lessons');
+  const lessonsList = document.querySelector('.lessons-links');
+
+  toggleBtn.addEventListener('click', () => {
+    lessonsList.classList.toggle('hidden');
+  });
+    </script>
     </body>
 </html>

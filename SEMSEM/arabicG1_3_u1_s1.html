@@ -19,7 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap"
       rel="stylesheet"
     />
-   
+    <link rel="stylesheet" href="arabicG1_1_u1_s1.css"/>
 
     <title> اللغة العربية : الفصل الأول </title>
     </head>
@@ -42,7 +42,8 @@
 
        <!-- قائمة دروس الوحده الاولى -->
         <nav>
-    <ul class="lessons-links fade-in">
+     <button class="toggle-lessons">📚 دروس الوحدة الأولى</button>
+        <ul class="lessons-links fade-in hidden">
         <a href="#" class="unit-title">الوَحْدَةُ الأُولَى: أُسْرَتِي</a>
         <li><a href="arabicG1_1_u1_s1.html" class="nav-item">الدَّرْسُ الأَوَّلُ: اسْتَمِعْ بِانْتِبَاهٍ وَتُرْكِيزٍ</a></li>
         <li><a href="arabicG1_2_u1_s1.html" class="nav-item">الدَّرْسُ الثَّانِي: تَحَدَّثْ بِطَلَاقَةٍ</a></li>
@@ -78,7 +79,7 @@
       </main>
       <!-- cards -->
    <div class="card_container fade-in">
-     <div class="main_idea">
+     <div class="main_idea" style="margin-bottom:10%;border: 1px solid #704e3d ;">
           <h2> الفكرة  الرئيسية </h2>
           <p> "
             تعريف الطلاب بحرف المد الألف (المكتوب بأشكال مختلفة: ا، ى) وطريقة نطقه الصحيح في الكلمات العربية.  
@@ -88,7 +89,7 @@
              - الألف المقصورة (ى) مثل في كلمة فَتَى.  "  </p>
              <img src="images/a_alphabet4.png" class="concept-img">
       </div>
-      <div class="card1">
+      <div class="card1" style="margin-bottom:10%;border: 1px solid #704e3d ;">
       <h2>(3.1)أَتَعَرّفُ الْحَرْفُ</h2>
       <h3>1.أَبْحَثُ في الصُّورَةِ عَنْ أَشْياءَ فِيها صوتُ الْمَدِّ الإلِفِ :</h3>
       <img src="images/family4.jpg" alt="صورة تحتوي على أشياء فيها حرف الألف" class="concept-img">
@@ -96,12 +97,12 @@
       <h3>2.أُرَدِّدُ مُنْتَبِهًا لِصَوْتِ حَرْفِ الْمَدِّ الأَلِفِ (ا ، ى) :</h3>
       <img src="images/a_alphabet.png" alt="صورة تحتوي على حروف المد" class="concept-img">
       </div>
-      <div class="card2">
+      <div class="card2" style="margin-bottom:10%;border: 1px solid #704e3d ;">
       <h2>(3.2) أُمَيِّزُ </h2>
       <h3>1.أُرْسُمُ (◯) حَولَ حَرْفِ الْمَّدِ الأَلِفِ (ا ، ى) :</h3>
       <img src="images/a_alphabet2.png" class="concept-img">
       </div>
-      <div class="card3">
+      <div class="card3" style="margin-bottom:10%;border: 1px solid #704e3d ;">
       <h2>(3.3)أُجَرِّدُ </h2>
       <h3>1.أُرْسُمُ (◯) حَولَ حَرْفِ الْمَّدِ الأَلِفِ (ا ، ى) فِي الكَلِماَاتِ الآتِيةِ :</h3>
       <img src="images/a_alphabet3.png" class="concept-img">
@@ -148,5 +149,14 @@
             </div>
         </div>
     </footer>
+
+     <script>
+      const toggleBtn = document.querySelector('.toggle-lessons');
+  const lessonsList = document.querySelector('.lessons-links');
+
+  toggleBtn.addEventListener('click', () => {
+    lessonsList.classList.toggle('hidden');
+  });
+    </script>
     </body>
 </html>
