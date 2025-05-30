@@ -8,7 +8,9 @@
     });
   });
 
-  
+  const b=document.getElementById("b");
+ const x=document.querySelector("x");
+ const y=document.querySelector("y");
   let timeLeft = 500;
   const timerElement = document.getElementById("timer");
 
@@ -71,9 +73,10 @@
   }
 
   document.getElementById("result").textContent = "علامتك النهائية: " + score + " من 100";
-
   if (score >= 70) {
     document.getElementById("video").src = "https://cdn.htmlgames.com/WoodBlockPuzzle/";
+    document.getElementsByClassName("x")[0].style.opacity = "1";
   }
+
 }
 
