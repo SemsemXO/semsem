@@ -18,9 +18,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap"
       rel="stylesheet"
+      
     />
    
-
+<link rel="stylesheet" href="arabicG1_1_u1_s1.css"/>
     <title> اللغة العربية : الفصل الأول </title>
     </head>
     <body>
@@ -42,7 +43,8 @@
 
        <!-- قائمة دروس الوحده الاولى -->
         <nav>
-    <ul class="lessons-links fade-in">
+   <button class="toggle-lessons">📚 دروس الوحدة الأولى</button>
+        <ul class="lessons-links fade-in hidden">
         <a href="#" class="unit-title">الوَحْدَةُ الأُولَى: أُسْرَتِي</a>
         <li><a href="arabicG1_1_u1_s1.html" class="nav-item">الدَّرْسُ الأَوَّلُ: اسْتَمِعْ بِانْتِبَاهٍ وَتُرْكِيزٍ</a></li>
         <li><a href="arabicG1_2_u1_s1.html" class="nav-item">الدَّرْسُ الثَّانِي: تَحَدَّثْ بِطَلَاقَةٍ</a></li>
@@ -179,5 +181,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+      const toggleBtn = document.querySelector('.toggle-lessons');
+  const lessonsList = document.querySelector('.lessons-links');
+
+  toggleBtn.addEventListener('click', () => {
+    lessonsList.classList.toggle('hidden');
+  });
+    </script>
     </body>
     </html>
