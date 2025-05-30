@@ -4,13 +4,8 @@
 }
 
 body {
-    background: linear-gradient(100deg, #ffffff, #c06eff );
+    background: linear-gradient(100deg, #ffffff, #72ee72);
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 .marhey-font {
@@ -35,8 +30,8 @@ ul {
     position: fixed;
     z-index: 5;
     width: 100%;
-    background: linear-gradient(200deg ,#dcaeff,#ffffff, #ecf479);
-    border-bottom: 5px rgb(255, 255, 255) solid;
+    background: linear-gradient(135deg, #8de78d, #ffd95d);
+    border-bottom: 5px white solid;
     border-radius: 0 0 15px 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -47,15 +42,13 @@ ul {
 .nav-links li{
     margin-bottom:10px;
     position:relative;
-    background:rgba(252, 243, 123, 0.9) ;
+    background: #fca4a4;
     padding:10px;
-   box-shadow:  2px 3px rgba(83, 107, 141, 0.8);
-    border:2px solid #ffffff;
     border-radius: 25px;
     transition: all 0.3s ease;
 }
 .nav-links a {
-    color:rgb(32, 32, 32);
+    color:white;
 }
 
 .nav-links li:hover {
@@ -65,7 +58,7 @@ ul {
 }
 
 .nav-links li::before {
-    content: "🌺";
+    content: "🌷ִֶָ";
     font-size: 1.4rem;
     position: absolute;
     right: 15px;
@@ -104,9 +97,7 @@ main {
     padding: 200px 50px 0 50px;
     display: flex;
     gap:8rem;
-    flex: 1;
 }
-
 
 /*navigation*/
 .lessons-links{
@@ -115,40 +106,35 @@ main {
     gap:0.8rem;
     background-color: white;
     border-radius: 25px;
-    border-bottom:solid 5px  #604f83;
-    border-left:solid 5px  #e9eb99;
-  
-    padding:35px 20px;
-    width:100%;
+    border-bottom:solid 5px #f3cc4a;
+    border-left:solid 5px #f3cc4a;
+    padding:35px 10px;
 }
 .lessons-links ul{
     display: flex;
     flex-direction: column;
     gap:0.8rem;
 }
-.unit-title{
-    color:#604f83;
+
+.nav-title{
+    color:#f3cc4a;
     font-weight: bold;
-    font-size:0.9rem;
+}
+.unit-title{
+    color:#fca4a4;
+    font-weight: bold;
 }
 .nav-item{
-    color:rgba(83, 107, 141, 0.8);
-    font-size:0.9rem;
-  transition: all 0.3s ease-out;
+    color:#76d176;
+    font-size:0.85rem;
 }
 .nav-item:hover{
-    background:rgba(252, 243, 123, 0.9);
-    border-radius: 7px;
+    background:#fca4a4;
+    border-radius: 20px;
     padding:5px;
-    font-size: 0.rem;
-    color: #c06eff;
-    border: 2px solid  #604f83;
-    transform: scale(1.1);
+    color:white;
 }
 
-.content{
-    width:100%;
-}
 
 
 /*page head*/
@@ -156,10 +142,16 @@ main {
     margin-bottom:70px;
 }
 .title{
-    color:#604f83;
+    color:#f3cc4a;
     font-size:2rem;
     margin-bottom: 10px;
 }
+.subtitle{
+    color: #ebc54a;
+    font-size: 1.5rem;
+    margin-bottom:20px;
+}
+
 /*back and next buttons*/
 .back-next{
     display: flex;
@@ -168,14 +160,12 @@ main {
     gap:1.2rem;
 }
 .back-next a{
-    color: rgba(42, 53, 69, 0.8);
+    color:white;
     font-weight: bold;
-    background: linear-gradient(135deg,  rgba(255, 246, 119, 0.9), #f3fcca);
+    background: linear-gradient(135deg, #8de78d, #ffd95d);
     width:30%;
     padding:10px;
     border-radius: 20px;
-     box-shadow:  2px 3px rgba(83, 107, 141, 0.8);
-    border:2px solid #ffffff;
     transition: all 0.3s ease;
 }
 .back-next a:hover{
@@ -199,22 +189,66 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/**main idea box**/
+.main-idea h3{
+    font-size: 1.5rem;
+    background-color: #76d176;
+    color: #ffffff;
+    padding: 5px;
+}
+.main-idea p{
+    font-size: 1.2rem;
+    background: #8de78d;
+    color:#f8f2f2;
+    padding:25px;
+
+}
+
+
+/*similarities box*/
+.similarities h3{
+    font-size: 1.5rem;
+    background-color: #f3cc4a;
+    color: white;
+    padding: 5px;
+}
+
+
+
+/*differences box*/
+.differences h3{
+    font-size: 1.5rem;
+    background-color: #fca4a4;
+    color: #ffffff;
+    padding: 5px;
+}
+
+
+
+.image img{
+    border-radius:25px;
+    margin-bottom:5px;
+    width:100%;
+}
+.image p{
+    color:#fca4a4;
+}
+
+
 
 
 /*footer*/
 .footer {
     margin-top:150px;
     padding: 50px 20px 10px 20px;
-     background: linear-gradient(200deg ,#b9bf6a,#ffdede,  #9655c7 );
-    border-top: 5px rgb(255, 255, 255) solid;
-    box-shadow: 0 4px 8px rgba(53, 31, 77, 0.1);
-  
+    background: linear-gradient(135deg, #8de78d, #ffd95d);
+    border-top: 5px white solid;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .footer-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-   
 }
 
 .semsem {
@@ -229,54 +263,38 @@ main {
 
 .contact a {
     text-decoration: none;
-    color: #060131;
+    color: #345a51;
 }
 
-/*card*/
-.card_container {
+/*footer bottom*/
+.footer-bottom {
+
+    margin-top: 2rem;
     display: flex;
-    flex-wrap: wrap;
-    margin: 5%;
-    gap: 20px;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    font-family: "Marhey", sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #345a51;
 }
 
-.card_container > div {
-    background: linear-gradient(135deg,  rgba(255, 246, 119, 0.9), #f3fcca);
-    border-radius: 10px;
-    padding: 2%;
-    flex: 1 1 300px;
-    border:4px solid white;
-    box-shadow:  4px 6px #7c77a3;
-    transition: transform 0.3s ease;
+.footer-bottom a {
+    color: #345a51;
 }
 
-.card_container > div:hover {
-    transform: translateY(-10px);
-    background-color:white
-    
+.footer-bottom a:hover {
+    transform: scale(1.1);
 }
+ .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+      }
 
-.card_container h2 {
-    color:#7c77a3;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-.card_container p {
-    font-size: 1rem;
-    color: #726e30;
-    margin-bottom: 10px;
-}
-
-.card_container img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 15px;
-    border-radius: 8px;
-}
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
 
 
 
@@ -326,23 +344,18 @@ main {
     }
 
     /*navigation*/
-    nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .lessons-links{
+        flex-direction: row;
         padding:30px 10px;
-        width:50%;
         gap:0.5rem;
     }
 
     .unit-title{
-        font-size:0.7rem !important;
+        font-size:0.55rem !important;
     }
 
     .nav-item{
-        font-size:0.6rem !important;
+        font-size:0.5rem !important;
     }
 
     /*page head*/
@@ -352,26 +365,47 @@ main {
     .title{
      font-size:1.3em;
     }
+    .subtitle{
+    font-size: 1.1rem;
+    }
 
-   /*back and next buttons*/
+/*back and next buttons*/
    .back-next a{
     font-size:0.5rem !important;
     padding:10x;
     }
 
 
-    /*lesson content*/
+/*lesson content*/
     .video-container iframe{
-    width: 90%;
+    width: 100%;
     height: 300px;
+    }
+
+/*main idea box*/
+   .main-idea h3,
+   .similarities h3,
+   .differences h3{
+    font-size: 1.2rem;
+    padding: 3px;
+    }
+    .main-idea p,
+    .similarities ul,
+    .differences ul{
+    font-size: 1rem;
+    padding:18px;
+
+    }
+
+
+    .image img{
+        width:70%;
     }
 
     .footer{
         flex-direction: column;
-      
     }
     .footer-content{
-        width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
@@ -391,14 +425,69 @@ main {
         width: 100%;
     }
 
-}
-.fade-in {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+
 }
 
-    .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
+
+
+@media (max-width: 1024px) {
+
+    .logo img {
+    width: 30vw;
     }
+
+    main {
+    padding: 250px 10px 0 10px;
+    flex-direction: column;
+    gap:1.5rem;
+    }
+
+    /*navigation*/
+    .lessons-links,
+    .nav-title{
+        justify-content: center;
+        flex-direction: row;
+    }
+     .unit-title{
+        font-size:1.3rem;
+    }
+
+    .nav-item{
+        font-size:1rem;
+    }
+
+
+    /*page head*/
+    .title{
+     font-size:1.5em;
+    }
+    .subtitle{
+    font-size: 1.3rem;
+    }
+
+/*back and next buttons*/
+   .back-next a{
+    font-size:1rem;
+    padding:10x;
+    }
+
+/*main idea box*/
+   .main-idea h3,
+   .similarities h3,
+   .differences h3{
+    font-size: 1.3rem;
+    }
+    .main-idea p,
+    .similarities ul,
+    .differences ul{
+    font-size: 1.2rem;
+    }
+
+
+    .image img{
+        width:70%;
+    }
+}
+
+
+
