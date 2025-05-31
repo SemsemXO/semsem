@@ -7,7 +7,18 @@
       }
     });
   });
+const gameLinks = [
+  "https://play.famobi.com/cannon-balls-3d",
+  "https://play.famobi.com/om-nom-run",
+  "https://play.famobi.com/bubble-tower-3d",
+  "https://play.famobi.com/bubble-woods",
+  "https://play.famobi.com/totemia-cursed-marbles",
+  "https://cdn.htmlgames.com/WoodBlockPuzzle/",
+  "https://play.famobi.com/moto-x3m-pool-party"
+];
 
+// اختيار رابط عشوائي
+const randomIndex = Math.floor(Math.random() * gameLinks.length);
   const b=document.getElementById("b");
  const x=document.querySelector("x");
  const y=document.querySelector("y");
@@ -74,8 +85,12 @@
 
   document.getElementById("result").textContent = "علامتك النهائية: " + score + " من 100";
   if (score >= 70) {
-    document.getElementById("video").src = "https://cdn.htmlgames.com/WoodBlockPuzzle/";
+    document.getElementById("video").src = gameLinks[randomIndex];
     document.getElementsByClassName("x")[0].style.opacity = "1";
+    document.getElementsByClassName("y")[0].style.opacity = "1";
+  }
+  else{
+      document.getElementsByClassName("y")[0].style.opacity = "1";
   }
 
 }

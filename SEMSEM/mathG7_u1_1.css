@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .marhey-font {
@@ -207,13 +208,13 @@ main {
      background: linear-gradient(200deg ,#b9bf6a,#ffdede,  #9655c7 );
     border-top: 5px rgb(255, 255, 255) solid;
     box-shadow: 0 4px 8px rgba(53, 31, 77, 0.1);
-    width: 100%;
+  
 }
 .footer-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+   
 }
 
 .semsem {
@@ -367,9 +368,10 @@ main {
 
     .footer{
         flex-direction: column;
-        width: 100%;
+      
     }
     .footer-content{
+        width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
