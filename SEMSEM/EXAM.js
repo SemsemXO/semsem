@@ -8,13 +8,15 @@
     });
   });
 const gameLinks = [
-  "https://play.famobi.com/cannon-balls-3d",
-  "https://play.famobi.com/om-nom-run",
-  "https://play.famobi.com/bubble-tower-3d",
-  "https://play.famobi.com/bubble-woods",
-  "https://play.famobi.com/totemia-cursed-marbles",
+  "https://cdn.htmlgames.com/ANonogramADay/",
+  "https://cdn.htmlgames.com/NumberSearch/",
+  "https://cdn.htmlgames.com/TapItAway3D/",
+  "https://cdn.htmlgames.com/Sumjong/",
+  "https://cdn.htmlgames.com/Daily1to25/",
   "https://cdn.htmlgames.com/WoodBlockPuzzle/",
-  "https://play.famobi.com/moto-x3m-pool-party"
+  "https://cdn.htmlgames.com/RapidMath/",
+  "https://cdn.htmlgames.com/TicTacToe/",
+  "https://cdn.htmlgames.com/ETBrain/",
 ];
 
 // اختيار رابط عشوائي
