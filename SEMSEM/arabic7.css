@@ -295,6 +295,9 @@ main {
     justify-content: space-between;
     width: 100%;
 }
+a{
+    color: #fdcb4d;
+}
 
 .semsem {
     width: 40%;
