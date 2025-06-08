@@ -43,16 +43,12 @@ const randomIndex = Math.floor(Math.random() * gameLinks.length);
   }, 1000);
   function submitExam() {
   let score = 0;
- const correctAnswers = {
-  q1: "a", q2: "b", q3: "c", q4: "d", q5: "a",
-  q6: "b", q7: "c", q8: "d", q9: "a", q10: "b",
-  q11: "c", q12: "d", q13: "a", q14: "b", q15: "c",
-  q16: "d", q17: "a", q18: "b", q19: "c", q20: "d",
-  q21: "a", q22: "b", q23: "c", q24: "d", q25: "a",
-  q26: "b", q27: "c", q28: "d", q29: "a", q30: "b",
-  q31: "c", q32: "d", q33: "a", q34: "b", q35: "c",
-  q36: "d", q37: "a", q38: "b", q39: "c", q40: "d"
-};
+  const correctAnswers = {
+    q1: "a", q2: "b", q3: "c", q4: "d", q5: "a",
+    q6: "b", q7: "c", q8: "d", q9: "a", q10: "b",
+    q11: "c", q12: "d", q13: "a", q14: "b", q15: "c",
+    q16: "d", q17: "a", q18: "b", q19: "c", q20: "d"
+  };
 
 
   for (let i = 1; i <= 40; i++) {
