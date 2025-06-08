@@ -51,7 +51,6 @@ ul {
    box-shadow:  2px 3px #B2CD9C;
     border:2px solid #ffffff;
     border-radius: 25px;
-    transition: all 0.3s ease;
 }
 .nav-links a {
     color:white;
@@ -118,6 +117,7 @@ main {
     border-left:solid 5px #7b9663;
     padding:35px 25px;
     width:100%;
+    transition: all 0.3s ease;
 }
 .lessons-links ul{
     display: flex;
@@ -130,15 +130,16 @@ main {
     font-size:0.9rem;
 }
 .nav-item{
-     color: #97b082;
-
+    color: #97b082;
     font-size:0.8rem;
+    cursor:pointer;
 }
 .nav-item:hover{
     background:rgba(69, 56, 25, 0.83);
     border-radius: 20px;
     padding:5px;
     color:white;
+    display: inline-block;
 }
 
 .content{
@@ -534,3 +535,21 @@ main {
 }
 
 
+/*quiz btn*/
+.lesson-content{
+    display: none;
+    justify-content: center;
+    align-items:center;
+    gap:1rem;
+    margin-top:2px;
+}
+.lesson-content a{
+    color:#f8aa75;
+    font-size:0.8rem;
+    padding:5px;
+}
+.lesson-content a:hover{
+    background:#B2CD9C;
+    color: white;
+    border-radius: 20px;
+}
