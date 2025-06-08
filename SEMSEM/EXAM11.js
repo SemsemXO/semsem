@@ -51,7 +51,7 @@ const randomIndex = Math.floor(Math.random() * gameLinks.length);
   };
 
 
-  for (let i = 1; i <= 40; i++) {
+  for (let i = 1; i <= 20; i++) {
     const questionName = "q" + i;
     const selected = document.querySelector('input[name="' + questionName + '"]:checked');
     const allOptions = document.querySelectorAll('input[name="' + questionName + '"]');
