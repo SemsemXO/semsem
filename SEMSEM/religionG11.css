@@ -1,0 +1,197 @@
+/* الخط العام والخلفية */
+body {
+    font-family: 'Marhey', sans-serif;
+    background-color: #e6f2ff;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #2a5885, #e6f2ff);
+    border-bottom: 5px solid white;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    list-style-type: none;
+    background: #e6f2ff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    padding-right: 40px;
+}
+
+.nav-links li::before {
+    content: "🌷ִֶָ";
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+    font-size: 1.4rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links li:hover::before {
+    opacity: 1;
+    right: 5px;
+}
+
+.nav-links a {
+    color: #2a5885;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+main {
+    padding: 100px 20px 40px;
+}
+
+.title h2 {
+    background-color: #a8d0eb;
+    color: #2a5885;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+.materials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.materials li {
+    margin: 10px 0;
+}
+
+.materials a {
+    display: block;
+    padding: 12px;
+    background-color: #2a5885;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.materials a:hover {
+    background-color: #e6f2ff;
+    color: #2a5885;
+    border: 2px solid #2a5885;
+    transform: scale(1.05);
+}
+
+
+.download-btn a {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: #6b0606;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.download-btn a:hover {
+    transform: scale(1.1);
+    background-color: #e6f2ff;
+    color: #2a5885;
+    border: 2px solid #6b0606;
+}
+
+
+footer {
+    background-color: #2a5885;
+    color: #a8d0eb;
+    padding: 30px 15px;
+    margin-top: 50px;
+    border-top: 2px dashed #ccc;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-content div {
+    flex: 1 1 300px;
+}
+
+.footer h3, .footer h4 {
+    color: #fff;
+}
+
+.footer a {
+    color: #e6f2ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9em;
+    color: #ceb84b;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
