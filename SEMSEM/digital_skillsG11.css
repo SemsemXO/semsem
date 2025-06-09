@@ -146,6 +146,34 @@ main {
         }
 
 
+/*download btns*/
+.books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.download-btn {
+    background: linear-gradient(135deg, #ffc5d7, #c08497);
+    width: 30%;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    text-align: center;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(192, 132, 151, 0.4), 0 4px 6px rgba(255, 197, 215, 0.3);
+    cursor: pointer;
+}
+
+
+
 /*footer*/
 .footer {
     margin-top:150px;

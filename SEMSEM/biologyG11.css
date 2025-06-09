@@ -146,6 +146,40 @@ main {
         }
 
 
+
+
+        .books {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.download-btn {
+   background: linear-gradient(45deg,#ffd6e0,#86e6f7);
+  width: 30%;
+  padding: 12px;
+  border-radius: 25px;
+  transition: all 0.4s ease;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn a {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Marhey", sans-serif;
+}
+
+.download-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(255, 111, 97, 0.4),
+              0 6px 12px rgba(253, 203, 77, 0.3);
+  filter: brightness(1.05);
+}
+
+
 /*footer*/
 .footer {
     margin-top:150px;

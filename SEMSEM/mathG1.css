@@ -147,6 +147,39 @@ main {
 
 
 
+.download-btn {
+  margin: 10px auto;
+  padding: 15px 25px;
+  width: fit-content;
+  background: #54b0cc;
+  border-radius: 20px;
+  border-bottom: solid 4px #fdcb4d;
+  border-left: solid 4px #fdcb4d;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn a {
+  color: white !important;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Marhey", sans-serif;
+}
+
+
+.download-btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background: #45a0b5;
+  padding-right: 35px;
+}
+
+
+
+
 
 /*footer*/
 .footer {
