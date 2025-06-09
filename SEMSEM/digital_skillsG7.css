@@ -112,6 +112,43 @@ main nav {
 
 }
 
+
+/* download button */
+.books {
+  margin-top: 20px;
+}
+
+.download-btn {
+  margin: 10px auto;
+  padding: 14px 24px;
+  width: fit-content;
+  background: #4CAF50;
+  border-radius: 15px;
+  border-bottom: solid 3px #388E3C; 
+  border-left: solid 3px #388E3C;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Marhey", sans-serif;
+}
+
+.download-btn:hover {
+  transform: scale(1.05);
+  background: #43A047; 
+  cursor: pointer;
+  padding-right: 30px;
+}
+
+
 /* Footer */
 .footer {
  background: linear-gradient(135deg, #49779f,#d2b8b8, #a0c963 80%);
