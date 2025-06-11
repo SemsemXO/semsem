@@ -541,3 +541,13 @@ main {
     box-shadow: 0 8px 16px #56443f;
     cursor: pointer;
 }
+ .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
